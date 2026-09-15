@@ -1,8 +1,14 @@
 <title>Jaruwan Essén</title>
-<meta name="description" content="Privat BI-portefølje for Jaruwan Essén – Power BI, datamodellering og beslutningsstøtte." />
+<meta
+  name="description"
+  content="Privat BI-portefølje for Jaruwan Essén – Power BI, datamodellering og beslutningsstøtte."
+/>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750;800&display=swap" />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750;800&display=swap"
+/>
 <link rel="stylesheet" href="styles.css" />
 
 <header class="site-header">
@@ -18,15 +24,22 @@
 
 <main>
   <section class="hero" id="top">
-    <div class="eyebrow"><span></span> Power BI · Datamodellering · Beslutningsstøtte</div>
+    <div class="eyebrow">
+      <span></span> Power BI · Datamodellering · Beslutningsstøtte
+    </div>
     <h1>Jeg gjør komplekse data<br /><em>enklere å beslutte på.</em></h1>
     <p class="hero-copy">
       Fra uklare forretningsbehov og ujevne datakilder til robuste modeller,
       tydelige KPI-er og rapporter som hjelper ledere å prioritere.
     </p>
     <div class="hero-actions">
-      <a class="button primary" href="#case">Utforsk dashboard-caset <span aria-hidden="true">↓</span></a>
-      <span class="privacy-note"><span class="lock" aria-hidden="true">●</span> Privat portefølje · mockdata</span>
+      <a class="button primary" href="#case"
+        >Utforsk dashboard-caset <span aria-hidden="true">↓</span></a
+      >
+      <span class="privacy-note"
+        ><span class="lock" aria-hidden="true">●</span> Privat portefølje ·
+        mockdata</span
+      >
     </div>
     <div class="capability-strip" aria-label="Kompetanseområder">
       <div><strong>01</strong><span>Forretningsforståelse</span></div>
@@ -44,13 +57,18 @@
       </div>
       <p>
         Caset undersøker hvilke nettbaserte emner som bør skaleres, forbedres,
-        stabiliseres eller revurderes – basert på lønnsomhet, studentvekst og gjennomføring.
+        stabiliseres eller revurderes – basert på lønnsomhet, studentvekst og
+        gjennomføring.
       </p>
     </div>
 
     <div class="mock-banner" role="note">
       <span aria-hidden="true">i</span>
-      <p><strong>Demonstrasjonsdata.</strong> Alle emner, tall og organisasjonsenheter er fiktive. Modellen er laget for å vise analysemetode uten å eksponere virksomhetsdata.</p>
+      <p>
+        <strong>Demonstrasjonsdata.</strong> Alle emner, tall og
+        organisasjonsenheter er fiktive. Modellen er laget for å vise
+        analysemetode uten å eksponere virksomhetsdata.
+      </p>
     </div>
 
     <div class="dashboard-shell">
@@ -59,7 +77,14 @@
           <p>LEDELSESRAPPORT</p>
           <h3>Porteføljeoversikt</h3>
         </div>
-        <button class="reset-button" id="resetFilters" type="button" aria-label="Nullstill alle filtre">↻ Nullstill</button>
+        <button
+          class="reset-button"
+          id="resetFilters"
+          type="button"
+          aria-label="Nullstill alle filtre"
+        >
+          ↻ Nullstill
+        </button>
       </div>
 
       <div class="kpi-grid" aria-live="polite">
@@ -88,17 +113,36 @@
       <div class="matrix-toolbar">
         <div class="period-pills" role="group" aria-label="Velg periode">
           <span class="period-caption">Velg periode</span>
-          <button class="period-pill" type="button" data-period="12m">Siste 12 måned</button>
-          <button class="period-pill" type="button" data-period="2y">Siste 2 år</button>
-          <button class="period-pill active" type="button" data-period="3y">Siste 3 år</button>
-          <button class="period-pill" type="button" data-period="4y">Siste 4 år</button>
-          <button class="period-pill" type="button" data-period="5y">Siste 5 år</button>
+          <button class="period-pill" type="button" data-period="12m">
+            Siste 12 måned
+          </button>
+          <button class="period-pill" type="button" data-period="2y">
+            Siste 2 år
+          </button>
+          <button class="period-pill active" type="button" data-period="3y">
+            Siste 3 år
+          </button>
+          <button class="period-pill" type="button" data-period="4y">
+            Siste 4 år
+          </button>
+          <button class="period-pill" type="button" data-period="5y">
+            Siste 5 år
+          </button>
         </div>
         <div class="toolbar-right">
           <div class="filtere-wrap">
-            <button class="filtere-btn" id="filtereBtn" type="button" aria-expanded="false" aria-controls="filterePanel">Filtere</button>
+            <button
+              class="filtere-btn"
+              id="filtereBtn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="filterePanel"
+            >
+              Filtere
+            </button>
             <div class="filtere-panel" id="filterePanel" hidden>
-              <label><span>Fagområde</span>
+              <label
+                ><span>Fagområde</span>
                 <select id="areaFilter">
                   <option value="Alle">Alle fagområder</option>
                   <option value="Ledelse">Ledelse</option>
@@ -116,55 +160,136 @@
       <div class="dashboard-grid">
         <article class="chart-card matrix-card">
           <div class="matrix-masthead">
-            <span class="matrix-title">Nettstudier portfølje – fri progresjon</span>
-            <span class="matrix-subtitle">Endring i antall studenter (studentvekst) × Endring i dekningsbidrag</span>
+            <span class="matrix-title"
+              >Nettstudier portfølje – fri progresjon</span
+            >
+            <span class="matrix-subtitle"
+              >Endring i antall studenter (studentvekst) × Endring i
+              dekningsbidrag</span
+            >
           </div>
           <div class="matrix-toolbar-row">
             <div class="visual-toggles" role="group" aria-label="Visningsvalg">
-              <button class="toggle-pill" id="toggleSize" type="button" aria-pressed="false">Antall studierett</button>
-              <button class="toggle-pill active" id="toggleRegression" type="button" aria-pressed="true">Regresjon</button>
-              <button class="toggle-pill" id="toggleAge" type="button" aria-pressed="false">Vis nyere emner</button>
+              <button
+                class="toggle-pill"
+                id="toggleSize"
+                type="button"
+                aria-pressed="false"
+              >
+                Antall studierett
+              </button>
+              <button
+                class="toggle-pill active"
+                id="toggleRegression"
+                type="button"
+                aria-pressed="true"
+              >
+                Regresjon
+              </button>
+              <button
+                class="toggle-pill"
+                id="toggleAge"
+                type="button"
+                aria-pressed="false"
+              >
+                Vis nyere emner
+              </button>
             </div>
-            <div class="gradient-legend" id="gradientLegend" aria-hidden="true"></div>
+            <div
+              class="gradient-legend"
+              id="gradientLegend"
+              aria-hidden="true"
+            ></div>
           </div>
           <div class="chart-wrap">
-            <svg id="portfolioChart" role="img" aria-labelledby="chartTitle chartDesc" viewBox="0 0 760 430">
-              <title id="chartTitle">Porteføljematrise for nettbaserte emner</title>
-              <desc id="chartDesc">Emner plassert etter endring i dekningsbidrag og endring i antall studenter.</desc>
+            <svg
+              id="portfolioChart"
+              role="img"
+              aria-labelledby="chartTitle chartDesc"
+              viewBox="0 0 760 430"
+            >
+              <title id="chartTitle">
+                Porteføljematrise for nettbaserte emner
+              </title>
+              <desc id="chartDesc">
+                Emner plassert etter endring i dekningsbidrag og endring i
+                antall studenter.
+              </desc>
             </svg>
             <div class="tooltip" id="chartTooltip" role="status" hidden></div>
           </div>
-          <p class="dashed-note"><i class="dash-swatch" aria-hidden="true"></i> Stiplet kant: lansert i eller etter periodens start (nyere emne)</p>
+          <p class="dashed-note">
+            <i class="dash-swatch" aria-hidden="true"></i> Stiplet kant: lansert
+            i eller etter periodens start (nyere emne)
+          </p>
         </article>
 
         <aside class="insight-card" id="insightCard" aria-live="polite">
           <div class="insight-placeholder" id="insightPlaceholder">
             <span class="inspect-icon" aria-hidden="true">↗</span>
             <h4>Velg en boble</h4>
-            <p>Klikk et emne i matrisen eller tabellen for å se detaljer. Analytisk anbefaling er ikke bygget ennå.</p>
+            <p>
+              Klikk et emne i matrisen eller tabellen for å se detaljer.
+              Analytisk anbefaling er ikke bygget ennå.
+            </p>
           </div>
           <div class="insight-content" id="insightContent" hidden>
-            <button id="closeInsight" class="detail-close" aria-label="Lukk detaljvisning" type="button">×</button>
+            <button
+              id="closeInsight"
+              class="detail-close"
+              aria-label="Lukk detaljvisning"
+              type="button"
+            >
+              ×
+            </button>
             <div class="detail-tags">
               <span class="detail-pill fase" id="detailFase">Fase: –</span>
-              <span class="detail-pill tiltak" id="detailTiltak">Tiltak: –</span>
+              <span class="detail-pill tiltak" id="detailTiltak"
+                >Tiltak: –</span
+              >
             </div>
             <h4 id="detailName">–</h4>
             <p class="course-code" id="detailCode">–</p>
             <p class="detail-launch" id="detailLaunch">–</p>
             <div class="detail-metric-box">
-              <div class="dm-row"><span>Dekningsbidrag</span><strong><i id="detailProfitArrow" class="dm-arrow"></i> <span id="detailProfit">–</span></strong></div>
+              <div class="dm-row">
+                <span>Dekningsbidrag</span
+                ><strong
+                  ><i id="detailProfitArrow" class="dm-arrow"></i>
+                  <span id="detailProfit">–</span></strong
+                >
+              </div>
               <div class="dm-sep"></div>
-              <div class="dm-row"><span id="detailDeltaLabel">Differanse i antall studenter</span><strong><i id="detailDeltaArrow" class="dm-arrow"></i> <span id="detailDelta">–</span></strong></div>
-              <div class="dm-row"><span>Studenter med studierett</span><strong id="detailStudentsNow">–</strong></div>
-              <div class="dm-row"><span id="detailSinceLabel">Antall studenter siden lansering</span><strong id="detailSince">–</strong></div>
+              <div class="dm-row">
+                <span id="detailDeltaLabel">Differanse i antall studenter</span
+                ><strong
+                  ><i id="detailDeltaArrow" class="dm-arrow"></i>
+                  <span id="detailDelta">–</span></strong
+                >
+              </div>
+              <div class="dm-row">
+                <span>Studenter med studierett</span
+                ><strong id="detailStudentsNow">–</strong>
+              </div>
+              <div class="dm-row">
+                <span id="detailSinceLabel"
+                  >Antall studenter siden lansering</span
+                ><strong id="detailSince">–</strong>
+              </div>
             </div>
             <div class="detail-programs">
-              <div class="dp-title">Tilknytning til <strong id="detailTotalPrograms">–</strong> totalt studieprogram</div>
+              <div class="dp-title">
+                Tilknytning til
+                <strong id="detailTotalPrograms">–</strong> totalt studieprogram
+              </div>
               <div class="dp-grid">
-                <div><strong id="detailKjerne">–</strong><span>Kjerne</span></div>
+                <div>
+                  <strong id="detailKjerne">–</strong><span>Kjerne</span>
+                </div>
                 <div><strong id="detailValg">–</strong><span>Valg</span></div>
-                <div><strong id="detailSpesial">–</strong><span>Spesial.</span></div>
+                <div>
+                  <strong id="detailSpesial">–</strong><span>Spesial.</span>
+                </div>
               </div>
             </div>
             <p class="detail-footer">Klikk for mer informasjon →</p>
@@ -180,18 +305,24 @@
           </div>
           <label class="search-field">
             <span class="sr-only">Søk etter emne</span>
-            <input id="courseSearch" type="search" placeholder="Søk etter emne …" />
+            <input
+              id="courseSearch"
+              type="search"
+              placeholder="Søk etter emne …"
+            />
           </label>
         </div>
         <div class="table-filters">
-          <label><span>Velg startår</span>
+          <label
+            ><span>Velg startår</span>
             <select id="startYearFilter">
               <option value="2025">2025</option>
               <option value="2024">2024</option>
               <option value="2023">2023</option>
             </select>
           </label>
-          <label><span>Driftfase</span>
+          <label
+            ><span>Driftfase</span>
             <select id="faseFilter">
               <option value="Alle">Alle</option>
               <option value="Drift">Drift</option>
@@ -199,36 +330,52 @@
               <option value="Utfasing">Utfasing</option>
             </select>
           </label>
-          <label><span>Emnestatus</span>
+          <label
+            ><span>Emnestatus</span>
             <select id="statusFilter">
               <option value="Alle">Alle</option>
               <option value="Aktiv" selected>Aktiv</option>
               <option value="Inaktiv">Inaktiv</option>
             </select>
           </label>
-          <label><span>Institutt</span>
+          <label
+            ><span>Institutt</span>
             <select id="instituttFilter">
               <option value="Alle">Alle</option>
-              <option value="Institutt for ledelse og økonomi">Institutt for ledelse og økonomi</option>
-              <option value="Institutt for teknologi">Institutt for teknologi</option>
-              <option value="Institutt for helsevitenskap">Institutt for helsevitenskap</option>
-              <option value="Institutt for design og kreative fag">Institutt for design og kreative fag</option>
+              <option value="Institutt for ledelse og økonomi">
+                Institutt for ledelse og økonomi
+              </option>
+              <option value="Institutt for teknologi">
+                Institutt for teknologi
+              </option>
+              <option value="Institutt for helsevitenskap">
+                Institutt for helsevitenskap
+              </option>
+              <option value="Institutt for design og kreative fag">
+                Institutt for design og kreative fag
+              </option>
             </select>
           </label>
-          <label><span>Portefølje</span>
+          <label
+            ><span>Portefølje</span>
             <select id="portefoljeFilter">
               <option value="Alle">Alle</option>
               <option value="Ledelse">Ledelse</option>
               <option value="Økonomi og styring">Økonomi og styring</option>
               <option value="Teknologi">Teknologi</option>
               <option value="Data og IT">Data og IT</option>
-              <option value="Helse og livsmestring">Helse og livsmestring</option>
-              <option value="Pedagogikk og veiledning">Pedagogikk og veiledning</option>
+              <option value="Helse og livsmestring">
+                Helse og livsmestring
+              </option>
+              <option value="Pedagogikk og veiledning">
+                Pedagogikk og veiledning
+              </option>
               <option value="Design">Design</option>
               <option value="Kreative fag">Kreative fag</option>
             </select>
           </label>
-          <label><span>Alder (emne)</span>
+          <label
+            ><span>Alder (emne)</span>
             <select id="alderFilter">
               <option value="Alle">Alle</option>
               <option value="0-2">0–2 år</option>
@@ -241,16 +388,124 @@
           <table>
             <thead>
               <tr>
-                <th scope="col" class="th-left sortable" data-key="fase" tabindex="0" role="button" aria-sort="none">Fase<span class="sort-indicator" aria-hidden="true"></span></th>
-                <th scope="col" class="th-left sortable" data-key="emne" tabindex="0" role="button" aria-sort="none">Emnekode og navn<span class="sort-indicator" aria-hidden="true"></span></th>
-                <th scope="col" class="sortable" data-key="alder" tabindex="0" role="button" aria-sort="none">Alder<span class="sort-indicator" aria-hidden="true"></span></th>
-                <th scope="col" class="sortable" data-key="students" tabindex="0" role="button" aria-sort="none">Aktiv stu.<span class="sort-indicator" aria-hidden="true"></span></th>
-                <th scope="col" class="sortable" data-key="overskudd" tabindex="0" role="button" aria-sort="none">Overskudd<span class="sort-indicator" aria-hidden="true"></span></th>
-                <th scope="col" class="sortable" data-key="kjop" tabindex="0" role="button" aria-sort="none">Antall kjøp<span class="sort-indicator" aria-hidden="true"></span></th>
-                <th scope="col" class="th-left sortable" data-key="portefolje" tabindex="0" role="button" aria-sort="none">CRM-Portefølje<span class="sort-indicator" aria-hidden="true"></span></th>
-                <th scope="col" class="th-left sortable" data-key="nus" tabindex="0" role="button" aria-sort="none">NUS-Gruppe<span class="sort-indicator" aria-hidden="true"></span></th>
-                <th scope="col" class="sortable" data-key="nuskode" tabindex="0" role="button" aria-sort="none">Nuskode<span class="sort-indicator" aria-hidden="true"></span></th>
-                <th scope="col" class="sortable" data-key="tiltak" tabindex="0" role="button" aria-sort="none">Tiltak<span class="sort-indicator" aria-hidden="true"></span></th>
+                <th
+                  scope="col"
+                  class="th-left sortable"
+                  data-key="fase"
+                  tabindex="0"
+                  role="button"
+                  aria-sort="none"
+                >
+                  Fase<span class="sort-indicator" aria-hidden="true"></span>
+                </th>
+                <th
+                  scope="col"
+                  class="th-left sortable"
+                  data-key="emne"
+                  tabindex="0"
+                  role="button"
+                  aria-sort="none"
+                >
+                  Emnekode og navn<span
+                    class="sort-indicator"
+                    aria-hidden="true"
+                  ></span>
+                </th>
+                <th
+                  scope="col"
+                  class="sortable"
+                  data-key="alder"
+                  tabindex="0"
+                  role="button"
+                  aria-sort="none"
+                >
+                  Alder<span class="sort-indicator" aria-hidden="true"></span>
+                </th>
+                <th
+                  scope="col"
+                  class="sortable"
+                  data-key="students"
+                  tabindex="0"
+                  role="button"
+                  aria-sort="none"
+                >
+                  Aktiv stu.<span
+                    class="sort-indicator"
+                    aria-hidden="true"
+                  ></span>
+                </th>
+                <th
+                  scope="col"
+                  class="sortable"
+                  data-key="overskudd"
+                  tabindex="0"
+                  role="button"
+                  aria-sort="none"
+                >
+                  Overskudd<span
+                    class="sort-indicator"
+                    aria-hidden="true"
+                  ></span>
+                </th>
+                <th
+                  scope="col"
+                  class="sortable"
+                  data-key="kjop"
+                  tabindex="0"
+                  role="button"
+                  aria-sort="none"
+                >
+                  Antall kjøp<span
+                    class="sort-indicator"
+                    aria-hidden="true"
+                  ></span>
+                </th>
+                <th
+                  scope="col"
+                  class="th-left sortable"
+                  data-key="portefolje"
+                  tabindex="0"
+                  role="button"
+                  aria-sort="none"
+                >
+                  CRM-Portefølje<span
+                    class="sort-indicator"
+                    aria-hidden="true"
+                  ></span>
+                </th>
+                <th
+                  scope="col"
+                  class="th-left sortable"
+                  data-key="nus"
+                  tabindex="0"
+                  role="button"
+                  aria-sort="none"
+                >
+                  NUS-Gruppe<span
+                    class="sort-indicator"
+                    aria-hidden="true"
+                  ></span>
+                </th>
+                <th
+                  scope="col"
+                  class="sortable"
+                  data-key="nuskode"
+                  tabindex="0"
+                  role="button"
+                  aria-sort="none"
+                >
+                  Nuskode<span class="sort-indicator" aria-hidden="true"></span>
+                </th>
+                <th
+                  scope="col"
+                  class="sortable"
+                  data-key="tiltak"
+                  tabindex="0"
+                  role="button"
+                  aria-sort="none"
+                >
+                  Tiltak<span class="sort-indicator" aria-hidden="true"></span>
+                </th>
               </tr>
             </thead>
             <tbody id="courseTable"></tbody>
@@ -264,24 +519,36 @@
     <div class="method-intro">
       <p class="kicker">Bak rapporten</p>
       <h2>En løsning er mer enn visualene.</h2>
-      <p>Jeg arbeider gjennom hele kjeden – fra definisjon av beslutningen til modell, mållogikk, validering og en rapportopplevelse brukeren forstår.</p>
+      <p>
+        Jeg arbeider gjennom hele kjeden – fra definisjon av beslutningen til
+        modell, mållogikk, validering og en rapportopplevelse brukeren forstår.
+      </p>
     </div>
 
     <div class="method-grid">
       <article>
         <span>01</span>
         <h3>Forretningsspørsmål</h3>
-        <p>Oversetter «vi trenger bedre oversikt» til konkrete beslutninger, KPI-er og regler for prioritering.</p>
+        <p>
+          Oversetter «vi trenger bedre oversikt» til konkrete beslutninger,
+          KPI-er og regler for prioritering.
+        </p>
       </article>
       <article>
         <span>02</span>
         <h3>Robust datamodell</h3>
-        <p>Stjerneskjema med egne dimensjoner for emne, dato og fagområde – og eksplisitt håndtering av mange-til-mange.</p>
+        <p>
+          Stjerneskjema med egne dimensjoner for emne, dato og fagområde – og
+          eksplisitt håndtering av mange-til-mange.
+        </p>
       </article>
       <article>
         <span>03</span>
         <h3>Analyse til handling</h3>
-        <p>Kombinerer økonomi, vekst og kvalitet slik at signalene leder til oppfølging, ikke bare flere grafer.</p>
+        <p>
+          Kombinerer økonomi, vekst og kvalitet slik at signalene leder til
+          oppfølging, ikke bare flere grafer.
+        </p>
       </article>
     </div>
 
@@ -289,7 +556,10 @@
       <div>
         <p class="model-label">EKSEMPEL PÅ SEMANTISK MODELL</p>
         <h3>En modell som tåler nye spørsmål</h3>
-        <p>Én tydelig filterretning, eksplisitte mål og dimensjoner som kan gjenbrukes på tvers av rapporter.</p>
+        <p>
+          Én tydelig filterretning, eksplisitte mål og dimensjoner som kan
+          gjenbrukes på tvers av rapporter.
+        </p>
       </div>
       <div class="model-diagram" aria-label="Forenklet stjerneskjema">
         <div class="dimension">DimDato</div>
@@ -310,4 +580,4 @@
   </section>
 </main>
 
-<script src="script.js"></script>
+<script src="./Script.js"></script>
