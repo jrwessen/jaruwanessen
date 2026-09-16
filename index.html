@@ -1,583 +1,802 @@
-<title>Jaruwan Essén</title>
-<meta
-  name="description"
-  content="Privat BI-portefølje for Jaruwan Essén – Power BI, datamodellering og beslutningsstøtte."
-/>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750;800&display=swap"
-/>
-<link rel="stylesheet" href="styles.css" />
-
-<header class="site-header">
-  <a class="brand" href="#top" aria-label="Til toppen">
-    <span class="brand-mark">JE</span>
-    <span>Jaruwan Essén</span>
-  </a>
-  <nav aria-label="Hovedmeny">
-    <a href="#case">Dashboard-case</a>
-    <a href="#method">Metode</a>
-  </nav>
-</header>
-
-<main>
-  <section class="hero" id="top">
-    <div class="eyebrow">
-      <span></span> Power BI · Datamodellering · Beslutningsstøtte
-    </div>
-    <h1>Jeg gjør komplekse data<br /><em>enklere å beslutte på.</em></h1>
-    <p class="hero-copy">
-      Fra uklare forretningsbehov og ujevne datakilder til robuste modeller,
-      tydelige KPI-er og rapporter som hjelper ledere å prioritere.
-    </p>
-    <div class="hero-actions">
-      <a class="button primary" href="#case"
-        >Utforsk dashboard-caset <span aria-hidden="true">↓</span></a
-      >
-      <span class="privacy-note"
-        ><span class="lock" aria-hidden="true">●</span> Privat portefølje ·
-        mockdata</span
-      >
-    </div>
-    <div class="capability-strip" aria-label="Kompetanseområder">
-      <div><strong>01</strong><span>Forretningsforståelse</span></div>
-      <div><strong>02</strong><span>Datamodell &amp; ETL</span></div>
-      <div><strong>03</strong><span>Visualisering &amp; UX</span></div>
-      <div><strong>04</strong><span>Analyse til handling</span></div>
-    </div>
-  </section>
-
-  <section class="case-section" id="case">
-    <div class="section-heading">
-      <div>
-        <p class="kicker">Interaktivt case · høyere utdanning</p>
-        <h2>Emneportefølje: hva bør ledelsen prioritere?</h2>
-      </div>
-      <p>
-        Caset undersøker hvilke nettbaserte emner som bør skaleres, forbedres,
-        stabiliseres eller revurderes – basert på lønnsomhet, studentvekst og
-        gjennomføring.
-      </p>
-    </div>
-
-    <div class="mock-banner" role="note">
-      <span aria-hidden="true">i</span>
-      <p>
-        <strong>Demonstrasjonsdata.</strong> Alle emner, tall og
-        organisasjonsenheter er fiktive. Modellen er laget for å vise
-        analysemetode uten å eksponere virksomhetsdata.
-      </p>
-    </div>
-
-    <div class="dashboard-shell">
-      <div class="dashboard-titlebar">
-        <div>
-          <p>LEDELSESRAPPORT</p>
-          <h3>Porteføljeoversikt</h3>
-        </div>
-        <button
-          class="reset-button"
-          id="resetFilters"
-          type="button"
-          aria-label="Nullstill alle filtre"
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Jaruwan Essén</title>
+    <meta
+      name="description"
+      content="Privat BI-portefølje for Jaruwan Essén – Power BI, datamodellering og beslutningsstøtte."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750;800&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Til toppen">
+        <span class="brand-mark">JE</span>
+        <span>Jaruwan Essén</span>
+      </a>
+      <nav aria-label="Hovedmeny">
+        <a href="#case">Dashboard-case</a>
+        <a href="#method">Metode</a>
+        <a href="about.html">Om meg</a>
+      </nav>
+      <div class="header-actions">
+        <a
+          class="icon-link"
+          href="https://www.linkedin.com/in/jaruwan-essen/"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
         >
-          ↻ Nullstill
-        </button>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM3.2 8.75h3.47V21H3.2V8.75Zm6.2 0h3.33v1.68h.05c.46-.87 1.6-1.79 3.3-1.79 3.53 0 4.18 2.32 4.18 5.34V21h-3.47v-5.4c0-1.29-.02-2.94-1.79-2.94-1.8 0-2.07 1.4-2.07 2.85V21H9.4V8.75Z"
+            />
+          </svg>
+        </a>
+        <a
+          class="icon-link"
+          href="mailto:jaruwan.essen@gmail.com"
+          aria-label="Send e-post"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M3 5.5A1.5 1.5 0 0 1 4.5 4h15A1.5 1.5 0 0 1 21 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5v-13Zm1.85.5 6.83 5.47a.5.5 0 0 0 .64 0L19.15 6H4.85ZM4.5 8.02V18h15V8.02l-6.98 5.6a2 2 0 0 1-2.54 0L4.5 8.02Z"
+            />
+          </svg>
+        </a>
+        <a class="cv-pill" href="resume.pdf" target="_blank" rel="noopener"
+          >CV <span aria-hidden="true">↓</span></a
+        >
       </div>
+    </header>
 
-      <div class="kpi-grid" aria-live="polite">
-        <article class="kpi-card accent">
-          <span>Dekningsbidrag</span>
-          <strong id="kpiProfit">–</strong>
-          <small id="kpiProfitDelta">–</small>
-        </article>
-        <article class="kpi-card">
-          <span>Aktive studenter</span>
-          <strong id="kpiStudents">–</strong>
-          <small id="kpiStudentDelta">–</small>
-        </article>
-        <article class="kpi-card">
-          <span>Vektet gjennomføring</span>
-          <strong id="kpiCompletion">–</strong>
-          <small>Mål: ≥ 75 %</small>
-        </article>
-        <article class="kpi-card warning">
-          <span>Krever oppfølging</span>
-          <strong id="kpiAttention">–</strong>
-          <small>Forbedre eller revurder</small>
-        </article>
-      </div>
-
-      <div class="matrix-toolbar">
-        <div class="period-pills" role="group" aria-label="Velg periode">
-          <span class="period-caption">Velg periode</span>
-          <button class="period-pill" type="button" data-period="12m">
-            Siste 12 måned
-          </button>
-          <button class="period-pill" type="button" data-period="2y">
-            Siste 2 år
-          </button>
-          <button class="period-pill active" type="button" data-period="3y">
-            Siste 3 år
-          </button>
-          <button class="period-pill" type="button" data-period="4y">
-            Siste 4 år
-          </button>
-          <button class="period-pill" type="button" data-period="5y">
-            Siste 5 år
-          </button>
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-top">
+          <span class="avatar-ring" aria-hidden="true">JE</span>
+          <span class="hero-badge"
+            ><span class="badge-dot" aria-hidden="true"></span> BI-utvikler ·
+            Høyere utdanning</span
+          >
         </div>
-        <div class="toolbar-right">
-          <div class="filtere-wrap">
+        <h1>Jeg gjør komplekse data<br /><em>enklere å beslutte på.</em></h1>
+        <p class="hero-copy">
+          Fra uklare forretningsbehov og ujevne datakilder til robuste modeller,
+          tydelige KPI-er og rapporter som hjelper ledere å prioritere.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#case"
+            >Utforsk dashboard-caset <span aria-hidden="true">↓</span></a
+          >
+          <a
+            class="resume-link"
+            href="resume.pdf"
+            target="_blank"
+            rel="noopener"
+            ><span class="lock" aria-hidden="true">↓</span> Last ned CV</a
+          >
+        </div>
+      </section>
+
+      <section class="case-section" id="case">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Interaktivt case · høyere utdanning</p>
+            <h2>Emneportefølje: hva bør ledelsen prioritere?</h2>
+          </div>
+          <p>
+            Caset undersøker hvilke nettbaserte emner som bør skaleres,
+            forbedres, stabiliseres eller revurderes – basert på lønnsomhet,
+            studentvekst og gjennomføring.
+          </p>
+        </div>
+
+        <div class="mock-banner" role="note">
+          <span aria-hidden="true">i</span>
+          <p>
+            <strong>Demonstrasjonsdata.</strong> Alle emner, tall og
+            organisasjonsenheter er fiktive. Modellen er laget for å vise
+            analysemetode uten å eksponere virksomhetsdata.
+          </p>
+        </div>
+
+        <div class="dashboard-shell">
+          <div class="dashboard-titlebar">
+            <div>
+              <p>LEDELSESRAPPORT</p>
+              <h3>Porteføljeoversikt</h3>
+            </div>
             <button
-              class="filtere-btn"
-              id="filtereBtn"
+              class="reset-button"
+              id="resetFilters"
               type="button"
-              aria-expanded="false"
-              aria-controls="filterePanel"
+              aria-label="Nullstill alle filtre"
             >
-              Filtere
+              ↻ Nullstill
             </button>
-            <div class="filtere-panel" id="filterePanel" hidden>
+          </div>
+
+          <div class="kpi-grid" aria-live="polite">
+            <article class="kpi-card accent">
+              <span>Dekningsbidrag</span>
+              <strong id="kpiProfit">–</strong>
+              <small id="kpiProfitDelta">–</small>
+            </article>
+            <article class="kpi-card">
+              <span>Aktive studenter</span>
+              <strong id="kpiStudents">–</strong>
+              <small id="kpiStudentDelta">–</small>
+            </article>
+            <article class="kpi-card">
+              <span>Vektet gjennomføring</span>
+              <strong id="kpiCompletion">–</strong>
+              <small>Mål: ≥ 75 %</small>
+            </article>
+            <article class="kpi-card warning">
+              <span>Krever oppfølging</span>
+              <strong id="kpiAttention">–</strong>
+              <small>Forbedre eller revurder</small>
+            </article>
+          </div>
+
+          <div class="matrix-toolbar">
+            <div class="period-pills" role="group" aria-label="Velg periode">
+              <span class="period-caption">Velg periode</span>
+              <button class="period-pill" type="button" data-period="12m">
+                Siste 12 måned
+              </button>
+              <button class="period-pill" type="button" data-period="2y">
+                Siste 2 år
+              </button>
+              <button class="period-pill active" type="button" data-period="3y">
+                Siste 3 år
+              </button>
+              <button class="period-pill" type="button" data-period="4y">
+                Siste 4 år
+              </button>
+              <button class="period-pill" type="button" data-period="5y">
+                Siste 5 år
+              </button>
+            </div>
+            <div class="toolbar-right">
+              <div class="filtere-wrap">
+                <button
+                  class="filtere-btn"
+                  id="filtereBtn"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="filterePanel"
+                >
+                  Filtere
+                </button>
+                <div class="filtere-panel" id="filterePanel" hidden>
+                  <label
+                    ><span>Fagområde</span>
+                    <select id="areaFilter">
+                      <option value="Alle">Alle fagområder</option>
+                      <option value="Ledelse">Ledelse</option>
+                      <option value="Teknologi">Teknologi</option>
+                      <option value="Helse">Helse</option>
+                      <option value="Design">Design</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <span class="year-badge">2026</span>
+            </div>
+          </div>
+
+          <div class="dashboard-grid">
+            <article class="chart-card matrix-card">
+              <div class="matrix-masthead">
+                <span class="matrix-title"
+                  >Nettstudier portfølje – fri progresjon</span
+                >
+                <span class="matrix-subtitle"
+                  >Endring i antall studenter (studentvekst) × Endring i
+                  dekningsbidrag</span
+                >
+              </div>
+              <div class="matrix-toolbar-row">
+                <div
+                  class="visual-toggles"
+                  role="group"
+                  aria-label="Visningsvalg"
+                >
+                  <button
+                    class="toggle-pill"
+                    id="toggleSize"
+                    type="button"
+                    aria-pressed="false"
+                  >
+                    Antall studierett
+                  </button>
+                  <button
+                    class="toggle-pill active"
+                    id="toggleRegression"
+                    type="button"
+                    aria-pressed="true"
+                  >
+                    Regresjon
+                  </button>
+                  <button
+                    class="toggle-pill"
+                    id="toggleAge"
+                    type="button"
+                    aria-pressed="false"
+                  >
+                    Vis nyere emner
+                  </button>
+                </div>
+                <div
+                  class="gradient-legend"
+                  id="gradientLegend"
+                  aria-hidden="true"
+                ></div>
+              </div>
+              <div class="chart-wrap">
+                <svg
+                  id="portfolioChart"
+                  role="img"
+                  aria-labelledby="chartTitle chartDesc"
+                  viewBox="0 0 760 430"
+                >
+                  <title id="chartTitle">
+                    Porteføljematrise for nettbaserte emner
+                  </title>
+                  <desc id="chartDesc">
+                    Emner plassert etter endring i dekningsbidrag og endring i
+                    antall studenter.
+                  </desc>
+                </svg>
+                <div
+                  class="tooltip"
+                  id="chartTooltip"
+                  role="status"
+                  hidden
+                ></div>
+              </div>
+              <p class="dashed-note">
+                <i class="dash-swatch" aria-hidden="true"></i> Stiplet kant:
+                lansert i eller etter periodens start (nyere emne)
+              </p>
+            </article>
+
+            <aside class="insight-card" id="insightCard" aria-live="polite">
+              <div class="insight-placeholder" id="insightPlaceholder">
+                <span class="inspect-icon" aria-hidden="true">↗</span>
+                <h4>Velg en boble</h4>
+                <p>
+                  Klikk et emne i matrisen eller tabellen for å se detaljer.
+                  Analytisk anbefaling er ikke bygget ennå.
+                </p>
+              </div>
+              <div class="insight-content" id="insightContent" hidden>
+                <button
+                  id="closeInsight"
+                  class="detail-close"
+                  aria-label="Lukk detaljvisning"
+                  type="button"
+                >
+                  ×
+                </button>
+                <div class="detail-tags">
+                  <span class="detail-pill fase" id="detailFase">Fase: –</span>
+                  <span class="detail-pill tiltak" id="detailTiltak"
+                    >Tiltak: –</span
+                  >
+                </div>
+                <h4 id="detailName">–</h4>
+                <p class="course-code" id="detailCode">–</p>
+                <p class="detail-launch" id="detailLaunch">–</p>
+                <div class="detail-metric-box">
+                  <div class="dm-row">
+                    <span>Dekningsbidrag</span
+                    ><strong
+                      ><i id="detailProfitArrow" class="dm-arrow"></i>
+                      <span id="detailProfit">–</span></strong
+                    >
+                  </div>
+                  <div class="dm-sep"></div>
+                  <div class="dm-row">
+                    <span id="detailDeltaLabel"
+                      >Differanse i antall studenter</span
+                    ><strong
+                      ><i id="detailDeltaArrow" class="dm-arrow"></i>
+                      <span id="detailDelta">–</span></strong
+                    >
+                  </div>
+                  <div class="dm-row">
+                    <span>Studenter med studierett</span
+                    ><strong id="detailStudentsNow">–</strong>
+                  </div>
+                  <div class="dm-row">
+                    <span id="detailSinceLabel"
+                      >Antall studenter siden lansering</span
+                    ><strong id="detailSince">–</strong>
+                  </div>
+                </div>
+                <div class="detail-programs">
+                  <div class="dp-title">
+                    Tilknytning til
+                    <strong id="detailTotalPrograms">–</strong> totalt
+                    studieprogram
+                  </div>
+                  <div class="dp-grid">
+                    <div>
+                      <strong id="detailKjerne">–</strong><span>Kjerne</span>
+                    </div>
+                    <div>
+                      <strong id="detailValg">–</strong><span>Valg</span>
+                    </div>
+                    <div>
+                      <strong id="detailSpesial">–</strong><span>Spesial.</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="detail-footer"></p>
+              </div>
+            </aside>
+          </div>
+
+          <article class="table-card">
+            <div class="card-heading table-heading">
+              <div>
+                <h4>Emneoversikt per år</h4>
+                <p id="resultCount">–</p>
+              </div>
+              <label class="search-field">
+                <span class="sr-only">Søk etter emne</span>
+                <input
+                  id="courseSearch"
+                  type="search"
+                  placeholder="Søk etter emne …"
+                />
+              </label>
+            </div>
+            <div class="table-filters">
               <label
-                ><span>Fagområde</span>
-                <select id="areaFilter">
-                  <option value="Alle">Alle fagområder</option>
+                ><span>Velg startår</span>
+                <select id="startYearFilter">
+                  <option value="2025">2025</option>
+                  <option value="2024">2024</option>
+                  <option value="2023">2023</option>
+                </select>
+              </label>
+              <label
+                ><span>Driftfase</span>
+                <select id="faseFilter">
+                  <option value="Alle">Alle</option>
+                  <option value="Drift">Drift</option>
+                  <option value="Utvikling">Utvikling</option>
+                  <option value="Utfasing">Utfasing</option>
+                </select>
+              </label>
+              <label
+                ><span>Emnestatus</span>
+                <select id="statusFilter">
+                  <option value="Alle">Alle</option>
+                  <option value="Aktiv" selected>Aktiv</option>
+                  <option value="Inaktiv">Inaktiv</option>
+                </select>
+              </label>
+              <label
+                ><span>Institutt</span>
+                <select id="instituttFilter">
+                  <option value="Alle">Alle</option>
+                  <option value="Institutt for ledelse og økonomi">
+                    Institutt for ledelse og økonomi
+                  </option>
+                  <option value="Institutt for teknologi">
+                    Institutt for teknologi
+                  </option>
+                  <option value="Institutt for helsevitenskap">
+                    Institutt for helsevitenskap
+                  </option>
+                  <option value="Institutt for design og kreative fag">
+                    Institutt for design og kreative fag
+                  </option>
+                </select>
+              </label>
+              <label
+                ><span>Portefølje</span>
+                <select id="portefoljeFilter">
+                  <option value="Alle">Alle</option>
                   <option value="Ledelse">Ledelse</option>
+                  <option value="Økonomi og styring">Økonomi og styring</option>
                   <option value="Teknologi">Teknologi</option>
-                  <option value="Helse">Helse</option>
+                  <option value="Data og IT">Data og IT</option>
+                  <option value="Helse og livsmestring">
+                    Helse og livsmestring
+                  </option>
+                  <option value="Pedagogikk og veiledning">
+                    Pedagogikk og veiledning
+                  </option>
                   <option value="Design">Design</option>
+                  <option value="Kreative fag">Kreative fag</option>
+                </select>
+              </label>
+              <label
+                ><span>Alder (emne)</span>
+                <select id="alderFilter">
+                  <option value="Alle">Alle</option>
+                  <option value="0-2">0–2 år</option>
+                  <option value="3-5">3–5 år</option>
+                  <option value="6+">6+ år</option>
                 </select>
               </label>
             </div>
-          </div>
-          <span class="year-badge">2026</span>
+            <div class="table-scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th
+                      scope="col"
+                      class="th-left sortable"
+                      data-key="fase"
+                      tabindex="0"
+                      role="button"
+                      aria-sort="none"
+                    >
+                      Fase<span
+                        class="sort-indicator"
+                        aria-hidden="true"
+                      ></span>
+                    </th>
+                    <th
+                      scope="col"
+                      class="th-left sortable"
+                      data-key="emne"
+                      tabindex="0"
+                      role="button"
+                      aria-sort="none"
+                    >
+                      Emnekode og navn<span
+                        class="sort-indicator"
+                        aria-hidden="true"
+                      ></span>
+                    </th>
+                    <th
+                      scope="col"
+                      class="sortable"
+                      data-key="alder"
+                      tabindex="0"
+                      role="button"
+                      aria-sort="none"
+                    >
+                      Alder<span
+                        class="sort-indicator"
+                        aria-hidden="true"
+                      ></span>
+                    </th>
+                    <th
+                      scope="col"
+                      class="sortable"
+                      data-key="students"
+                      tabindex="0"
+                      role="button"
+                      aria-sort="none"
+                    >
+                      Aktiv stu.<span
+                        class="sort-indicator"
+                        aria-hidden="true"
+                      ></span>
+                    </th>
+                    <th
+                      scope="col"
+                      class="sortable"
+                      data-key="overskudd"
+                      tabindex="0"
+                      role="button"
+                      aria-sort="none"
+                    >
+                      Overskudd<span
+                        class="sort-indicator"
+                        aria-hidden="true"
+                      ></span>
+                    </th>
+                    <th
+                      scope="col"
+                      class="sortable"
+                      data-key="kjop"
+                      tabindex="0"
+                      role="button"
+                      aria-sort="none"
+                    >
+                      Antall kjøp<span
+                        class="sort-indicator"
+                        aria-hidden="true"
+                      ></span>
+                    </th>
+                    <th
+                      scope="col"
+                      class="th-left sortable"
+                      data-key="portefolje"
+                      tabindex="0"
+                      role="button"
+                      aria-sort="none"
+                    >
+                      CRM-Portefølje<span
+                        class="sort-indicator"
+                        aria-hidden="true"
+                      ></span>
+                    </th>
+                    <th
+                      scope="col"
+                      class="th-left sortable"
+                      data-key="nus"
+                      tabindex="0"
+                      role="button"
+                      aria-sort="none"
+                    >
+                      NUS-Gruppe<span
+                        class="sort-indicator"
+                        aria-hidden="true"
+                      ></span>
+                    </th>
+                    <th
+                      scope="col"
+                      class="sortable"
+                      data-key="nuskode"
+                      tabindex="0"
+                      role="button"
+                      aria-sort="none"
+                    >
+                      Nuskode<span
+                        class="sort-indicator"
+                        aria-hidden="true"
+                      ></span>
+                    </th>
+                    <th
+                      scope="col"
+                      class="sortable"
+                      data-key="tiltak"
+                      tabindex="0"
+                      role="button"
+                      aria-sort="none"
+                    >
+                      Tiltak<span
+                        class="sort-indicator"
+                        aria-hidden="true"
+                      ></span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody id="courseTable"></tbody>
+              </table>
+            </div>
+          </article>
         </div>
-      </div>
+      </section>
 
-      <div class="dashboard-grid">
-        <article class="chart-card matrix-card">
-          <div class="matrix-masthead">
-            <span class="matrix-title"
-              >Nettstudier portfølje – fri progresjon</span
-            >
-            <span class="matrix-subtitle"
-              >Endring i antall studenter (studentvekst) × Endring i
-              dekningsbidrag</span
-            >
-          </div>
-          <div class="matrix-toolbar-row">
-            <div class="visual-toggles" role="group" aria-label="Visningsvalg">
-              <button
-                class="toggle-pill"
-                id="toggleSize"
-                type="button"
-                aria-pressed="false"
-              >
-                Antall studierett
-              </button>
-              <button
-                class="toggle-pill active"
-                id="toggleRegression"
-                type="button"
-                aria-pressed="true"
-              >
-                Regresjon
-              </button>
-              <button
-                class="toggle-pill"
-                id="toggleAge"
-                type="button"
-                aria-pressed="false"
-              >
-                Vis nyere emner
-              </button>
-            </div>
-            <div
-              class="gradient-legend"
-              id="gradientLegend"
-              aria-hidden="true"
-            ></div>
-          </div>
-          <div class="chart-wrap">
-            <svg
-              id="portfolioChart"
-              role="img"
-              aria-labelledby="chartTitle chartDesc"
-              viewBox="0 0 760 430"
-            >
-              <title id="chartTitle">
-                Porteføljematrise for nettbaserte emner
-              </title>
-              <desc id="chartDesc">
-                Emner plassert etter endring i dekningsbidrag og endring i
-                antall studenter.
-              </desc>
-            </svg>
-            <div class="tooltip" id="chartTooltip" role="status" hidden></div>
-          </div>
-          <p class="dashed-note">
-            <i class="dash-swatch" aria-hidden="true"></i> Stiplet kant: lansert
-            i eller etter periodens start (nyere emne)
-          </p>
-        </article>
-
-        <aside class="insight-card" id="insightCard" aria-live="polite">
-          <div class="insight-placeholder" id="insightPlaceholder">
-            <span class="inspect-icon" aria-hidden="true">↗</span>
-            <h4>Velg en boble</h4>
-            <p>
-              Klikk et emne i matrisen eller tabellen for å se detaljer.
-              Analytisk anbefaling er ikke bygget ennå.
-            </p>
-          </div>
-          <div class="insight-content" id="insightContent" hidden>
-            <button
-              id="closeInsight"
-              class="detail-close"
-              aria-label="Lukk detaljvisning"
-              type="button"
-            >
-              ×
-            </button>
-            <div class="detail-tags">
-              <span class="detail-pill fase" id="detailFase">Fase: –</span>
-              <span class="detail-pill tiltak" id="detailTiltak"
-                >Tiltak: –</span
-              >
-            </div>
-            <h4 id="detailName">–</h4>
-            <p class="course-code" id="detailCode">–</p>
-            <p class="detail-launch" id="detailLaunch">–</p>
-            <div class="detail-metric-box">
-              <div class="dm-row">
-                <span>Dekningsbidrag</span
-                ><strong
-                  ><i id="detailProfitArrow" class="dm-arrow"></i>
-                  <span id="detailProfit">–</span></strong
-                >
-              </div>
-              <div class="dm-sep"></div>
-              <div class="dm-row">
-                <span id="detailDeltaLabel">Differanse i antall studenter</span
-                ><strong
-                  ><i id="detailDeltaArrow" class="dm-arrow"></i>
-                  <span id="detailDelta">–</span></strong
-                >
-              </div>
-              <div class="dm-row">
-                <span>Studenter med studierett</span
-                ><strong id="detailStudentsNow">–</strong>
-              </div>
-              <div class="dm-row">
-                <span id="detailSinceLabel"
-                  >Antall studenter siden lansering</span
-                ><strong id="detailSince">–</strong>
-              </div>
-            </div>
-            <div class="detail-programs">
-              <div class="dp-title">
-                Tilknytning til
-                <strong id="detailTotalPrograms">–</strong> totalt studieprogram
-              </div>
-              <div class="dp-grid">
-                <div>
-                  <strong id="detailKjerne">–</strong><span>Kjerne</span>
-                </div>
-                <div><strong id="detailValg">–</strong><span>Valg</span></div>
-                <div>
-                  <strong id="detailSpesial">–</strong><span>Spesial.</span>
-                </div>
-              </div>
-            </div>
-            <p class="detail-footer">*Fiktive data</p>
-          </div>
-        </aside>
-      </div>
-
-      <article class="table-card">
-        <div class="card-heading table-heading">
+      <section class="process-section" id="process">
+        <div class="section-heading">
           <div>
-            <h4>Emneoversikt per år</h4>
-            <p id="resultCount">–</p>
+            <p class="kicker">Prosess</p>
+            <h2>Hvordan jeg jobbet med caset</h2>
           </div>
-          <label class="search-field">
-            <span class="sr-only">Søk etter emne</span>
-            <input
-              id="courseSearch"
-              type="search"
-              placeholder="Søk etter emne …"
-            />
-          </label>
+          <p>
+            Jeg ble nysgjerrig på hvordan en høyskole kan bruke egne data til å
+            prioritere mellom titalls nettbaserte emner samtidig, i stedet for å
+            vurdere dem ett og ett. Målet var å gi ledelsen ett sted å se
+            lønnsomhet, studentvekst og gjennomføring på én gang – og å gjøre
+            matrisen enkel nok til å faktisk brukes i et vanlig ledermøte.
+          </p>
         </div>
-        <div class="table-filters">
-          <label
-            ><span>Velg startår</span>
-            <select id="startYearFilter">
-              <option value="2025">2025</option>
-              <option value="2024">2024</option>
-              <option value="2023">2023</option>
-            </select>
-          </label>
-          <label
-            ><span>Driftfase</span>
-            <select id="faseFilter">
-              <option value="Alle">Alle</option>
-              <option value="Drift">Drift</option>
-              <option value="Utvikling">Utvikling</option>
-              <option value="Utfasing">Utfasing</option>
-            </select>
-          </label>
-          <label
-            ><span>Emnestatus</span>
-            <select id="statusFilter">
-              <option value="Alle">Alle</option>
-              <option value="Aktiv" selected>Aktiv</option>
-              <option value="Inaktiv">Inaktiv</option>
-            </select>
-          </label>
-          <label
-            ><span>Institutt</span>
-            <select id="instituttFilter">
-              <option value="Alle">Alle</option>
-              <option value="Institutt for ledelse og økonomi">
-                Institutt for ledelse og økonomi
-              </option>
-              <option value="Institutt for teknologi">
-                Institutt for teknologi
-              </option>
-              <option value="Institutt for helsevitenskap">
-                Institutt for helsevitenskap
-              </option>
-              <option value="Institutt for design og kreative fag">
-                Institutt for design og kreative fag
-              </option>
-            </select>
-          </label>
-          <label
-            ><span>Portefølje</span>
-            <select id="portefoljeFilter">
-              <option value="Alle">Alle</option>
-              <option value="Ledelse">Ledelse</option>
-              <option value="Økonomi og styring">Økonomi og styring</option>
-              <option value="Teknologi">Teknologi</option>
-              <option value="Data og IT">Data og IT</option>
-              <option value="Helse og livsmestring">
-                Helse og livsmestring
-              </option>
-              <option value="Pedagogikk og veiledning">
-                Pedagogikk og veiledning
-              </option>
-              <option value="Design">Design</option>
-              <option value="Kreative fag">Kreative fag</option>
-            </select>
-          </label>
-          <label
-            ><span>Alder (emne)</span>
-            <select id="alderFilter">
-              <option value="Alle">Alle</option>
-              <option value="0-2">0–2 år</option>
-              <option value="3-5">3–5 år</option>
-              <option value="6+">6+ år</option>
-            </select>
-          </label>
+
+        <div class="process-grid">
+          <div class="process-col">
+            <h3>Stegene jeg tok</h3>
+            <ol>
+              <li>
+                Oversatte forretningsbehovet til et konkret prosjektomfang og en
+                enkel modell for hva som skulle måles.
+              </li>
+              <li>
+                Kartla og koblet datakildene – CRM, studieadministrative
+                systemer og web-/kampanjedata.
+              </li>
+              <li>
+                Vasket og strukturerte dataene, siden de ikke lå klare i noe
+                felles datavarehus.
+              </li>
+              <li>Bygget datamodellen og målene (DAX) i Power BI.</li>
+              <li>
+                Utviklet en egen tilpasset visual i TypeScript og D3, siden
+                ingen standardvisual kunne vise lønnsomhet og vekst i samme
+                matrise.
+              </li>
+              <li>
+                Testet utkastet med noen i ledelsen og justerte terskelverdier
+                og fargebruk ut fra tilbakemeldingene.
+              </li>
+            </ol>
+          </div>
+          <div class="process-col">
+            <h3>Verktøy jeg brukte</h3>
+            <ul class="tool-list">
+              <li>Power BI &amp; DAX</li>
+              <li>Power Query (M)</li>
+              <li>TypeScript &amp; D3.js</li>
+              <li>SQL</li>
+              <li>CRM (Dynamics 365)</li>
+            </ul>
+            <h3>Hvorfor jeg tok disse stegene</h3>
+            <ul>
+              <li>
+                Planla analysen slik at den faktisk svarte på beslutningen
+                ledelsen sto overfor.
+              </li>
+              <li>
+                Sikret at modellen kunne stoles på, siden anbefalingene skulle
+                brukes direkte.
+              </li>
+              <li>
+                Bygget visualen fra bunnen fordi problemet var spesifikt nok til
+                at ingen ferdig komponent løste det godt.
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="table-scroll">
-          <table>
-            <thead>
-              <tr>
-                <th
-                  scope="col"
-                  class="th-left sortable"
-                  data-key="fase"
-                  tabindex="0"
-                  role="button"
-                  aria-sort="none"
-                >
-                  Fase<span class="sort-indicator" aria-hidden="true"></span>
-                </th>
-                <th
-                  scope="col"
-                  class="th-left sortable"
-                  data-key="emne"
-                  tabindex="0"
-                  role="button"
-                  aria-sort="none"
-                >
-                  Emnekode og navn<span
-                    class="sort-indicator"
-                    aria-hidden="true"
-                  ></span>
-                </th>
-                <th
-                  scope="col"
-                  class="sortable"
-                  data-key="alder"
-                  tabindex="0"
-                  role="button"
-                  aria-sort="none"
-                >
-                  Alder<span class="sort-indicator" aria-hidden="true"></span>
-                </th>
-                <th
-                  scope="col"
-                  class="sortable"
-                  data-key="students"
-                  tabindex="0"
-                  role="button"
-                  aria-sort="none"
-                >
-                  Aktiv stu.<span
-                    class="sort-indicator"
-                    aria-hidden="true"
-                  ></span>
-                </th>
-                <th
-                  scope="col"
-                  class="sortable"
-                  data-key="overskudd"
-                  tabindex="0"
-                  role="button"
-                  aria-sort="none"
-                >
-                  Overskudd<span
-                    class="sort-indicator"
-                    aria-hidden="true"
-                  ></span>
-                </th>
-                <th
-                  scope="col"
-                  class="sortable"
-                  data-key="kjop"
-                  tabindex="0"
-                  role="button"
-                  aria-sort="none"
-                >
-                  Antall kjøp<span
-                    class="sort-indicator"
-                    aria-hidden="true"
-                  ></span>
-                </th>
-                <th
-                  scope="col"
-                  class="th-left sortable"
-                  data-key="portefolje"
-                  tabindex="0"
-                  role="button"
-                  aria-sort="none"
-                >
-                  CRM-Portefølje<span
-                    class="sort-indicator"
-                    aria-hidden="true"
-                  ></span>
-                </th>
-                <th
-                  scope="col"
-                  class="th-left sortable"
-                  data-key="nus"
-                  tabindex="0"
-                  role="button"
-                  aria-sort="none"
-                >
-                  NUS-Gruppe<span
-                    class="sort-indicator"
-                    aria-hidden="true"
-                  ></span>
-                </th>
-                <th
-                  scope="col"
-                  class="sortable"
-                  data-key="nuskode"
-                  tabindex="0"
-                  role="button"
-                  aria-sort="none"
-                >
-                  Nuskode<span class="sort-indicator" aria-hidden="true"></span>
-                </th>
-                <th
-                  scope="col"
-                  class="sortable"
-                  data-key="tiltak"
-                  tabindex="0"
-                  role="button"
-                  aria-sort="none"
-                >
-                  Tiltak<span class="sort-indicator" aria-hidden="true"></span>
-                </th>
-              </tr>
-            </thead>
-            <tbody id="courseTable"></tbody>
-          </table>
+
+        <div class="challenge-block">
+          <h3>Utfordringer</h3>
+          <ol>
+            <li>
+              <strong>Datatilgang.</strong> Dataene lå spredt på tvers av CRM,
+              studieadministrative systemer og webanalyse, uten noe felles
+              datavarehus å hente fra. Jeg måtte avtale tilgang system for
+              system og bygge egne uttrekk for hver kilde.
+            </li>
+            <li>
+              <strong>Ustrukturerte data.</strong> Flere kilder hadde
+              inkonsekvent formatering og manglet en felles nøkkel. Det tok
+              lengre tid enn ventet å rense og koble dataene sammen til én
+              pålitelig modell.
+            </li>
+            <li>
+              <strong>Ingen ferdig visual.</strong> Det fantes ikke noe standard
+              Power BI-visual som kunne vise lønnsomhet og studentvekst i samme
+              matrise med terskelverdiene ledelsen faktisk brukte. Løsningen ble
+              å bygge en egen tilpasset visual i TypeScript og D3 – utviklet fra
+              en idé, utelukkende for å løse dette ene problemet.
+            </li>
+          </ol>
         </div>
-      </article>
-    </div>
-  </section>
+      </section>
 
-  <section class="method-section" id="method">
-    <div class="method-intro">
-      <p class="kicker">Bak rapporten</p>
-      <h2>En løsning er mer enn visualene.</h2>
-      <p>
-        Jeg arbeider gjennom hele kjeden – fra definisjon av beslutningen til
-        modell, mållogikk, validering og en rapportopplevelse brukeren forstår.
-      </p>
-    </div>
+      <section class="method-section" id="method">
+        <div class="method-intro">
+          <p class="kicker">Bak rapporten</p>
+          <h2>En løsning er mer enn visualene.</h2>
+          <p>
+            Jeg arbeider gjennom hele kjeden – fra definisjon av beslutningen
+            til modell, mållogikk, validering og en rapportopplevelse brukeren
+            forstår.
+          </p>
+        </div>
 
-    <div class="method-grid">
-      <article>
-        <span>01</span>
-        <h3>Forretningsspørsmål</h3>
-        <p>
-          Oversetter «vi trenger bedre oversikt» til konkrete beslutninger,
-          KPI-er og regler for prioritering.
+        <div class="method-grid">
+          <article>
+            <span>01</span>
+            <h3>Forretningsspørsmål</h3>
+            <p>
+              Oversetter «vi trenger bedre oversikt» til konkrete beslutninger,
+              KPI-er og regler for prioritering.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Robust datamodell</h3>
+            <p>
+              Stjerneskjema med egne dimensjoner for emne, dato og fagområde –
+              og eksplisitt håndtering av mange-til-mange.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Analyse til handling</h3>
+            <p>
+              Kombinerer økonomi, vekst og kvalitet slik at signalene leder til
+              oppfølging, ikke bare flere grafer.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="closer-section" aria-labelledby="closerHeading">
+        <span class="closer-photo" aria-hidden="true">JE</span>
+        <div class="closer-copy">
+          <p class="kicker" id="closerHeading">Om meg</p>
+          <p>
+            Jeg jobber med Power BI, datamodellering og tilpassede visualer for
+            å gjøre komplekse datasett forståelige for beslutningstakere. Denne
+            siden er et arbeidseksempel – ikke en produksjonsrapport.
+          </p>
+          <div class="closer-social">
+            <a
+              class="icon-link"
+              href="https://www.linkedin.com/in/jaruwan-essen/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM3.2 8.75h3.47V21H3.2V8.75Zm6.2 0h3.33v1.68h.05c.46-.87 1.6-1.79 3.3-1.79 3.53 0 4.18 2.32 4.18 5.34V21h-3.47v-5.4c0-1.29-.02-2.94-1.79-2.94-1.8 0-2.07 1.4-2.07 2.85V21H9.4V8.75Z"
+                />
+              </svg>
+            </a>
+            <a
+              class="icon-link"
+              href="mailto:jaruwan.essen@gmail.com"
+              aria-label="Send e-post"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M3 5.5A1.5 1.5 0 0 1 4.5 4h15A1.5 1.5 0 0 1 21 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5v-13Zm1.85.5 6.83 5.47a.5.5 0 0 0 .64 0L19.15 6H4.85ZM4.5 8.02V18h15V8.02l-6.98 5.6a2 2 0 0 1-2.54 0L4.5 8.02Z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="closer-actions">
+            <a class="button primary" href="about.html">Om meg</a>
+            <a class="button ghost" href="mailto:jaruwan.essen@gmail.com"
+              >Kontakt meg</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="brand-mark">JE</span>
+            <div>
+              <strong>Jaruwan Essén</strong>
+              <p>
+                BI-utvikler. Power BI, datamodellering og tilpassede visualer
+                for høyere utdanning.
+              </p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <p class="footer-heading">Sider</p>
+            <a href="#top">Hjem</a>
+            <a href="#case">Dashboard-case</a>
+            <a href="about.html">Om meg</a>
+          </div>
+          <div class="footer-col">
+            <p class="footer-heading">Kontakt</p>
+            <a
+              href="https://www.linkedin.com/in/jaruwan-essen/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn ↗</a
+            >
+            <a href="mailto:jaruwan.essen@gmail.com">E-post ↗</a>
+            <a href="resume.pdf" target="_blank" rel="noopener"
+              >Last ned CV ↓</a
+            >
+          </div>
+        </div>
+        <p class="footer-copyright">
+          Bygget som en interaktiv demonstrasjon med fiktive data.
         </p>
-      </article>
-      <article>
-        <span>02</span>
-        <h3>Robust datamodell</h3>
-        <p>
-          Stjerneskjema med egne dimensjoner for emne, dato og fagområde – og
-          eksplisitt håndtering av mange-til-mange.
-        </p>
-      </article>
-      <article>
-        <span>03</span>
-        <h3>Analyse til handling</h3>
-        <p>
-          Kombinerer økonomi, vekst og kvalitet slik at signalene leder til
-          oppfølging, ikke bare flere grafer.
-        </p>
-      </article>
-    </div>
+      </footer>
+    </main>
 
-    <div class="model-panel">
-      <div>
-        <p class="model-label">EKSEMPEL PÅ SEMANTISK MODELL</p>
-        <h3>En modell som tåler nye spørsmål</h3>
-        <p>
-          Én tydelig filterretning, eksplisitte mål og dimensjoner som kan
-          gjenbrukes på tvers av rapporter.
-        </p>
-      </div>
-      <div class="model-diagram" aria-label="Forenklet stjerneskjema">
-        <div class="dimension">DimDato</div>
-        <div class="dimension">DimEmne</div>
-        <div class="fact">Fakta<br /><strong>EmneÅr</strong></div>
-        <div class="dimension">DimFagområde</div>
-        <div class="dimension">DimStatus</div>
-      </div>
-    </div>
-
-    <footer>
-      <div>
-        <span class="brand-mark">JE</span>
-        <p><strong>Jaruwan Essén</strong><br />Power BI &amp; dataanalyse</p>
-      </div>
-      <p>Bygget som en interaktiv demonstrasjon med fiktive data.</p>
-    </footer>
-  </section>
-</main>
-
-<script src="./script.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
