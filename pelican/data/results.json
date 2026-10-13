@@ -1,0 +1,6643 @@
+{
+ "meta": {
+  "school": "Pelican University (fiktiv)",
+  "generated_by": "scripts/analyze.py",
+  "periods": [
+   {
+    "semester_key": "H-2023",
+    "semester_code": "H",
+    "year": 2023,
+    "semester_label": "Høst 2023",
+    "period_index": 1,
+    "start_date": "2023-08-21",
+    "exam_date": "2024-01-08",
+    "academic_year": "2023/2024"
+   },
+   {
+    "semester_key": "V-2024",
+    "semester_code": "V",
+    "year": 2024,
+    "semester_label": "Vår 2024",
+    "period_index": 2,
+    "start_date": "2024-01-15",
+    "exam_date": "2024-06-03",
+    "academic_year": "2023/2024"
+   },
+   {
+    "semester_key": "H-2024",
+    "semester_code": "H",
+    "year": 2024,
+    "semester_label": "Høst 2024",
+    "period_index": 3,
+    "start_date": "2024-08-19",
+    "exam_date": "2025-01-06",
+    "academic_year": "2024/2025"
+   },
+   {
+    "semester_key": "V-2025",
+    "semester_code": "V",
+    "year": 2025,
+    "semester_label": "Vår 2025",
+    "period_index": 4,
+    "start_date": "2025-01-13",
+    "exam_date": "2025-06-02",
+    "academic_year": "2024/2025"
+   },
+   {
+    "semester_key": "H-2025",
+    "semester_code": "H",
+    "year": 2025,
+    "semester_label": "Høst 2025",
+    "period_index": 5,
+    "start_date": "2025-08-18",
+    "exam_date": "2026-01-05",
+    "academic_year": "2025/2026"
+   },
+   {
+    "semester_key": "V-2026",
+    "semester_code": "V",
+    "year": 2026,
+    "semester_label": "Vår 2026",
+    "period_index": 6,
+    "start_date": "2026-01-12",
+    "exam_date": "2026-06-01",
+    "academic_year": "2025/2026"
+   }
+  ],
+  "rules": {
+   "baseline_periods": [
+    1,
+    2
+   ],
+   "latest_periods": [
+    5,
+    6
+   ],
+   "relative_threshold": 0.05,
+   "rate_threshold_pp": 3.0,
+   "market_threshold_pp": 5.0,
+   "revision_min_ticket_change": 4,
+   "large_multiplier": 2.0,
+   "small_course_avg_students": 25,
+   "market_basis": "national_all",
+   "revision_outlier_ratio": 1.8,
+   "revision_spike_ratio": 2.5,
+   "revision_spike_abs": 5,
+   "revision_effect_min_points": 0.2,
+   "onset": {
+    "enrol_yoy": -0.1,
+    "survey_points": -0.25,
+    "editor_points": -0.25,
+    "dropout_pp": 4.0,
+    "pass_pp": -4.0,
+    "cost_rel": 0.1
+   },
+   "classes": [
+    {
+     "min": 3,
+     "class": "Skalér"
+    },
+    {
+     "min": 2,
+     "class": "God utvikling"
+    },
+    {
+     "min": -1,
+     "class": "Stabil"
+    },
+    {
+     "min": -2,
+     "class": "Følg med"
+    },
+    {
+     "min": -99,
+     "class": "Handle nå"
+    }
+   ],
+   "big_course_upgrade": "net = -2 and students_latest >= median of judged courses -> Handle nå"
+  },
+  "metrics": [
+   {
+    "key": "students",
+    "label": "Studenter",
+    "kind": "rel",
+    "good_direction": 1
+   },
+   {
+    "key": "pass_rate",
+    "label": "Bestått",
+    "kind": "pp",
+    "good_direction": 1
+   },
+   {
+    "key": "dropout_rate",
+    "label": "Frafall",
+    "kind": "pp",
+    "good_direction": -1
+   },
+   {
+    "key": "student_survey",
+    "label": "Studentundersøkelse",
+    "kind": "rel",
+    "good_direction": 1
+   },
+   {
+    "key": "course_leader",
+    "label": "Emneansvarlig",
+    "kind": "rel",
+    "good_direction": 1
+   },
+   {
+    "key": "editorial",
+    "label": "Redaksjon",
+    "kind": "rel",
+    "good_direction": 1
+   },
+   {
+    "key": "cost_per_student",
+    "label": "Kostnad per student",
+    "kind": "rel",
+    "good_direction": -1
+   },
+   {
+    "key": "revision_cost",
+    "label": "Revisjonskostnad",
+    "kind": "rel",
+    "good_direction": -1
+   },
+   {
+    "key": "market_relative",
+    "label": "Vekst mot marked",
+    "kind": "pp_market",
+    "good_direction": 1
+   }
+  ],
+  "note": "Kursdata er syntetiske. Markedsdata er ekte (DBH tabell 124) og gjelder studieprogram, ikke emner."
+ },
+ "q1_dropout": {
+  "overall_dropout_rate": 13.7,
+  "share_of_dropouts_weeks_1_6": 70.3,
+  "share_of_dropouts_weeks_1_2_angrerett": 32.0,
+  "refunded_revenue_nok": 14127500,
+  "dropouts_by_week": [
+   {
+    "week": 1,
+    "dropouts": 666
+   },
+   {
+    "week": 2,
+    "dropouts": 679
+   },
+   {
+    "week": 3,
+    "dropouts": 581
+   },
+   {
+    "week": 4,
+    "dropouts": 424
+   },
+   {
+    "week": 5,
+    "dropouts": 325
+   },
+   {
+    "week": 6,
+    "dropouts": 278
+   },
+   {
+    "week": 7,
+    "dropouts": 105
+   },
+   {
+    "week": 8,
+    "dropouts": 103
+   },
+   {
+    "week": 9,
+    "dropouts": 89
+   },
+   {
+    "week": 10,
+    "dropouts": 104
+   },
+   {
+    "week": 11,
+    "dropouts": 103
+   },
+   {
+    "week": 12,
+    "dropouts": 90
+   },
+   {
+    "week": 13,
+    "dropouts": 85
+   },
+   {
+    "week": 14,
+    "dropouts": 88
+   },
+   {
+    "week": 15,
+    "dropouts": 101
+   },
+   {
+    "week": 16,
+    "dropouts": 99
+   },
+   {
+    "week": 17,
+    "dropouts": 88
+   },
+   {
+    "week": 18,
+    "dropouts": 103
+   },
+   {
+    "week": 19,
+    "dropouts": 92
+   }
+  ],
+  "curves": [
+   {
+    "segment": "Alle",
+    "n": 30692,
+    "dropout_rate": 13.7,
+    "active_pct_by_week": [
+     100.0,
+     97.83,
+     95.62,
+     93.72,
+     92.34,
+     91.28,
+     90.38,
+     90.04,
+     89.7,
+     89.41,
+     89.07,
+     88.74,
+     88.44,
+     88.17,
+     87.88,
+     87.55,
+     87.23,
+     86.94,
+     86.61,
+     86.31,
+     86.31
+    ]
+   },
+   {
+    "segment": "Enkeltemne",
+    "n": 19927,
+    "dropout_rate": 15.7,
+    "active_pct_by_week": [
+     100.0,
+     97.45,
+     94.92,
+     92.8,
+     91.18,
+     89.97,
+     88.91,
+     88.51,
+     88.1,
+     87.76,
+     87.41,
+     87.05,
+     86.71,
+     86.41,
+     86.08,
+     85.75,
+     85.39,
+     85.07,
+     84.66,
+     84.33,
+     84.33
+    ]
+   },
+   {
+    "segment": "Studieprogram",
+    "n": 10765,
+    "dropout_rate": 10.0,
+    "active_pct_by_week": [
+     100.0,
+     98.54,
+     96.91,
+     95.43,
+     94.49,
+     93.71,
+     93.1,
+     92.87,
+     92.66,
+     92.47,
+     92.15,
+     91.86,
+     91.65,
+     91.43,
+     91.21,
+     90.88,
+     90.63,
+     90.41,
+     90.21,
+     89.97,
+     89.97
+    ]
+   },
+   {
+    "segment": "Ny kunde",
+    "n": 23983,
+    "dropout_rate": 15.2,
+    "active_pct_by_week": [
+     100.0,
+     97.63,
+     95.13,
+     93.03,
+     91.48,
+     90.31,
+     89.31,
+     88.92,
+     88.56,
+     88.23,
+     87.84,
+     87.49,
+     87.15,
+     86.84,
+     86.52,
+     86.18,
+     85.84,
+     85.54,
+     85.16,
+     84.83,
+     84.83
+    ]
+   },
+   {
+    "segment": "Tilbakevendende kunde",
+    "n": 6709,
+    "dropout_rate": 8.4,
+    "active_pct_by_week": [
+     100.0,
+     98.55,
+     97.36,
+     96.2,
+     95.42,
+     94.75,
+     94.19,
+     94.04,
+     93.78,
+     93.62,
+     93.47,
+     93.19,
+     93.07,
+     92.91,
+     92.73,
+     92.44,
+     92.19,
+     91.95,
+     91.79,
+     91.58,
+     91.58
+    ]
+   },
+   {
+    "segment": "20–29",
+    "n": 8437,
+    "dropout_rate": 15.7,
+    "active_pct_by_week": [
+     100.0,
+     97.74,
+     95.1,
+     93.11,
+     91.6,
+     90.43,
+     89.34,
+     88.89,
+     88.48,
+     88.08,
+     87.69,
+     87.19,
+     86.84,
+     86.52,
+     86.1,
+     85.8,
+     85.43,
+     85.01,
+     84.67,
+     84.34,
+     84.34
+    ]
+   },
+   {
+    "segment": "30–39",
+    "n": 10381,
+    "dropout_rate": 13.1,
+    "active_pct_by_week": [
+     100.0,
+     97.89,
+     95.63,
+     93.76,
+     92.46,
+     91.65,
+     90.9,
+     90.62,
+     90.38,
+     90.12,
+     89.75,
+     89.48,
+     89.14,
+     88.89,
+     88.61,
+     88.22,
+     87.87,
+     87.64,
+     87.28,
+     86.92,
+     86.92
+    ]
+   },
+   {
+    "segment": "40–49",
+    "n": 7511,
+    "dropout_rate": 13.0,
+    "active_pct_by_week": [
+     100.0,
+     97.68,
+     95.81,
+     93.89,
+     92.62,
+     91.49,
+     90.63,
+     90.29,
+     89.91,
+     89.66,
+     89.35,
+     89.03,
+     88.83,
+     88.56,
+     88.35,
+     88.03,
+     87.76,
+     87.59,
+     87.26,
+     87.05,
+     87.05
+    ]
+   },
+   {
+    "segment": "50+",
+    "n": 4363,
+    "dropout_rate": 12.6,
+    "active_pct_by_week": [
+     100.0,
+     98.12,
+     96.26,
+     94.55,
+     93.03,
+     91.7,
+     90.72,
+     90.42,
+     90.1,
+     89.89,
+     89.66,
+     89.46,
+     89.2,
+     88.93,
+     88.77,
+     88.52,
+     88.24,
+     87.9,
+     87.6,
+     87.37,
+     87.37
+    ]
+   }
+  ],
+  "lifts": {
+   "programme_vs_single_course_pct": -36.0,
+   "returning_vs_new_pct": -44.5,
+   "age_20_29_vs_all_pct": 14.3
+  },
+  "by_period": [
+   {
+    "period_index": 1,
+    "semester_label": "Høst 2023",
+    "dropout_rate": 13.8
+   },
+   {
+    "period_index": 2,
+    "semester_label": "Vår 2024",
+    "dropout_rate": 13.8
+   },
+   {
+    "period_index": 3,
+    "semester_label": "Høst 2024",
+    "dropout_rate": 14.6
+   },
+   {
+    "period_index": 4,
+    "semester_label": "Vår 2025",
+    "dropout_rate": 13.1
+   },
+   {
+    "period_index": 5,
+    "semester_label": "Høst 2025",
+    "dropout_rate": 13.7
+   },
+   {
+    "period_index": 6,
+    "semester_label": "Vår 2026",
+    "dropout_rate": 13.1
+   }
+  ],
+  "by_course": [
+   {
+    "course_code": "DES2107",
+    "dropout_rate": 13.8,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 68.6,
+    "n": 876
+   },
+   {
+    "course_code": "DES2216",
+    "dropout_rate": 11.9,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 69.2,
+    "n": 548
+   },
+   {
+    "course_code": "DES2318",
+    "dropout_rate": 13.3,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 64.9,
+    "n": 429
+   },
+   {
+    "course_code": "DES2406",
+    "dropout_rate": 15.8,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 75.0,
+    "n": 355
+   },
+   {
+    "course_code": "DES2519",
+    "dropout_rate": 15.7,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 71.9,
+    "n": 612
+   },
+   {
+    "course_code": "DES2615",
+    "dropout_rate": 16.3,
+    "median_dropout_week": 3,
+    "share_first_6_weeks": 72.2,
+    "n": 221
+   },
+   {
+    "course_code": "DES2701",
+    "dropout_rate": 12.9,
+    "median_dropout_week": 3,
+    "share_first_6_weeks": 78.9,
+    "n": 885
+   },
+   {
+    "course_code": "DES2810",
+    "dropout_rate": 18.2,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 74.7,
+    "n": 433
+   },
+   {
+    "course_code": "DES2905",
+    "dropout_rate": 9.5,
+    "median_dropout_week": 3,
+    "share_first_6_weeks": 87.5,
+    "n": 84
+   },
+   {
+    "course_code": "DES2950",
+    "dropout_rate": 18.7,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 88.2,
+    "n": 91
+   },
+   {
+    "course_code": "HEL2112",
+    "dropout_rate": 13.6,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 68.2,
+    "n": 1253
+   },
+   {
+    "course_code": "HEL2203",
+    "dropout_rate": 13.3,
+    "median_dropout_week": 5,
+    "share_first_6_weeks": 67.1,
+    "n": 550
+   },
+   {
+    "course_code": "HEL2309",
+    "dropout_rate": 10.8,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 67.3,
+    "n": 454
+   },
+   {
+    "course_code": "HEL2417",
+    "dropout_rate": 16.4,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 59.2,
+    "n": 299
+   },
+   {
+    "course_code": "HEL2513",
+    "dropout_rate": 7.7,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 64.7,
+    "n": 444
+   },
+   {
+    "course_code": "HEL2604",
+    "dropout_rate": 7.5,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 78.0,
+    "n": 666
+   },
+   {
+    "course_code": "HEL2701",
+    "dropout_rate": 12.7,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 72.4,
+    "n": 1001
+   },
+   {
+    "course_code": "HEL2805",
+    "dropout_rate": 12.5,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 68.8,
+    "n": 510
+   },
+   {
+    "course_code": "HEL2810",
+    "dropout_rate": 11.9,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 70.0,
+    "n": 84
+   },
+   {
+    "course_code": "HEL2902",
+    "dropout_rate": 12.9,
+    "median_dropout_week": 3,
+    "share_first_6_weeks": 73.8,
+    "n": 620
+   },
+   {
+    "course_code": "LED2101",
+    "dropout_rate": 13.3,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 74.0,
+    "n": 1327
+   },
+   {
+    "course_code": "LED2210",
+    "dropout_rate": 13.8,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 70.8,
+    "n": 1812
+   },
+   {
+    "course_code": "LED2315",
+    "dropout_rate": 16.5,
+    "median_dropout_week": 3,
+    "share_first_6_weeks": 77.5,
+    "n": 485
+   },
+   {
+    "course_code": "LED2402",
+    "dropout_rate": 10.9,
+    "median_dropout_week": 5,
+    "share_first_6_weeks": 64.2,
+    "n": 487
+   },
+   {
+    "course_code": "LED2510",
+    "dropout_rate": 11.7,
+    "median_dropout_week": 5,
+    "share_first_6_weeks": 68.5,
+    "n": 783
+   },
+   {
+    "course_code": "LED2608",
+    "dropout_rate": 12.5,
+    "median_dropout_week": 3,
+    "share_first_6_weeks": 72.5,
+    "n": 321
+   },
+   {
+    "course_code": "LED2701",
+    "dropout_rate": 13.7,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 73.7,
+    "n": 2026
+   },
+   {
+    "course_code": "LED2705",
+    "dropout_rate": 12.6,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 70.0,
+    "n": 1697
+   },
+   {
+    "course_code": "LED2710",
+    "dropout_rate": 14.0,
+    "median_dropout_week": 3,
+    "share_first_6_weeks": 77.9,
+    "n": 615
+   },
+   {
+    "course_code": "LED2720",
+    "dropout_rate": 12.5,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 71.6,
+    "n": 930
+   },
+   {
+    "course_code": "TEK2105",
+    "dropout_rate": 12.5,
+    "median_dropout_week": 5,
+    "share_first_6_weeks": 63.7,
+    "n": 1167
+   },
+   {
+    "course_code": "TEK2209",
+    "dropout_rate": 11.9,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 67.3,
+    "n": 1723
+   },
+   {
+    "course_code": "TEK2312",
+    "dropout_rate": 22.2,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 72.6,
+    "n": 808
+   },
+   {
+    "course_code": "TEK2414",
+    "dropout_rate": 14.9,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 64.4,
+    "n": 793
+   },
+   {
+    "course_code": "TEK2507",
+    "dropout_rate": 14.9,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 63.1,
+    "n": 875
+   },
+   {
+    "course_code": "TEK2611",
+    "dropout_rate": 17.6,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 69.6,
+    "n": 393
+   },
+   {
+    "course_code": "TEK2701",
+    "dropout_rate": 13.9,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 75.0,
+    "n": 606
+   },
+   {
+    "course_code": "TEK2805",
+    "dropout_rate": 17.0,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 69.9,
+    "n": 1780
+   },
+   {
+    "course_code": "TEK2902",
+    "dropout_rate": 13.7,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 65.1,
+    "n": 944
+   },
+   {
+    "course_code": "TEK2950",
+    "dropout_rate": 14.3,
+    "median_dropout_week": 4,
+    "share_first_6_weeks": 64.4,
+    "n": 705
+   }
+  ]
+ },
+ "q3_sequences": {
+  "courses": [
+   {
+    "course_code": "LED2101",
+    "course_name": "Endringsledelse i praksis",
+    "events": []
+   },
+   {
+    "course_code": "LED2210",
+    "course_name": "Prosjektledelse",
+    "events": [
+     {
+      "metric": "Studenter (mot året før)",
+      "onset_period": 4,
+      "onset_label": "Vår 2025",
+      "value_at_onset": -19.12,
+      "value_latest": -16.28,
+      "unit": "%"
+     }
+    ]
+   },
+   {
+    "course_code": "LED2315",
+    "course_name": "Strategisk HR",
+    "events": [
+     {
+      "metric": "Frafall",
+      "onset_period": 6,
+      "onset_label": "Vår 2026",
+      "value_at_onset": 4.31,
+      "value_latest": 4.31,
+      "unit": "pp"
+     },
+     {
+      "metric": "Kostnad per student",
+      "onset_period": 6,
+      "onset_label": "Vår 2026",
+      "value_at_onset": 10.85,
+      "value_latest": 10.85,
+      "unit": "%"
+     }
+    ]
+   },
+   {
+    "course_code": "LED2402",
+    "course_name": "Bærekraftig virksomhetsstyring",
+    "events": []
+   },
+   {
+    "course_code": "LED2510",
+    "course_name": "Forhandling og påvirkning",
+    "events": []
+   },
+   {
+    "course_code": "LED2608",
+    "course_name": "Operativ økonomistyring",
+    "events": [
+     {
+      "metric": "Bestått",
+      "onset_period": 5,
+      "onset_label": "Høst 2025",
+      "value_at_onset": -6.41,
+      "value_latest": -16.1,
+      "unit": "pp"
+     },
+     {
+      "metric": "Frafall",
+      "onset_period": 5,
+      "onset_label": "Høst 2025",
+      "value_at_onset": 12.2,
+      "value_latest": 4.1,
+      "unit": "pp"
+     },
+     {
+      "metric": "Studentundersøkelse",
+      "onset_period": 6,
+      "onset_label": "Vår 2026",
+      "value_at_onset": -0.29,
+      "value_latest": -0.29,
+      "unit": "poeng"
+     }
+    ]
+   },
+   {
+    "course_code": "LED2701",
+    "course_name": "Bedriftsøkonomi grunnkurs",
+    "events": [
+     {
+      "metric": "Studenter (mot året før)",
+      "onset_period": 5,
+      "onset_label": "Høst 2025",
+      "value_at_onset": -17.39,
+      "value_latest": -14.14,
+      "unit": "%"
+     },
+     {
+      "metric": "Bestått",
+      "onset_period": 6,
+      "onset_label": "Vår 2026",
+      "value_at_onset": -5.77,
+      "value_latest": -5.77,
+      "unit": "pp"
+     }
+    ]
+   },
+   {
+    "course_code": "LED2705",
+    "course_name": "Regnskap og årsoppgjør",
+    "events": [
+     {
+      "metric": "Studenter (mot året før)",
+      "onset_period": 6,
+      "onset_label": "Vår 2026",
+      "value_at_onset": -14.83,
+      "value_latest": -14.83,
+      "unit": "%"
+     }
+    ]
+   },
+   {
+    "course_code": "LED2710",
+    "course_name": "Finansregnskap med analyse",
+    "events": [
+     {
+      "metric": "Redaksjon",
+      "onset_period": 6,
+      "onset_label": "Vår 2026",
+      "value_at_onset": -0.3,
+      "value_latest": -0.3,
+      "unit": "poeng"
+     }
+    ]
+   },
+   {
+    "course_code": "LED2720",
+    "course_name": "Digital markedsføring",
+    "events": []
+   },
+   {
+    "course_code": "TEK2414",
+    "course_name": "Informasjonssikkerhet",
+    "events": [
+     {
+      "metric": "Revisjonsbølge",
+      "onset_period": 3,
+      "onset_label": "Høst 2024",
+      "value_at_onset": 31,
+      "value_latest": null,
+      "unit": "saker"
+     },
+     {
+      "metric": "Kostnad per student",
+      "onset_period": 4,
+      "onset_label": "Vår 2025",
+      "value_at_onset": 13.07,
+      "value_latest": 20.26,
+      "unit": "%"
+     },
+     {
+      "metric": "Redaksjon",
+      "onset_period": 5,
+      "onset_label": "Høst 2025",
+      "value_at_onset": -0.25,
+      "value_latest": -0.25,
+      "unit": "poeng"
+     }
+    ]
+   },
+   {
+    "course_code": "TEK2611",
+    "course_name": "Digital arbeidsflyt",
+    "events": [
+     {
+      "metric": "Frafall",
+      "onset_period": 3,
+      "onset_label": "Høst 2024",
+      "value_at_onset": 6.21,
+      "value_latest": 15.67,
+      "unit": "pp"
+     },
+     {
+      "metric": "Redaksjon",
+      "onset_period": 3,
+      "onset_label": "Høst 2024",
+      "value_at_onset": -0.3,
+      "value_latest": -0.5,
+      "unit": "poeng"
+     },
+     {
+      "metric": "Studentundersøkelse",
+      "onset_period": 3,
+      "onset_label": "Høst 2024",
+      "value_at_onset": -0.37,
+      "value_latest": -0.67,
+      "unit": "poeng"
+     },
+     {
+      "metric": "Studenter (mot året før)",
+      "onset_period": 4,
+      "onset_label": "Vår 2025",
+      "value_at_onset": -15.15,
+      "value_latest": -12.5,
+      "unit": "%"
+     },
+     {
+      "metric": "Bestått",
+      "onset_period": 5,
+      "onset_label": "Høst 2025",
+      "value_at_onset": -6.36,
+      "value_latest": -12.9,
+      "unit": "pp"
+     }
+    ]
+   },
+   {
+    "course_code": "TEK2701",
+    "course_name": "Skytjenester og infrastruktur",
+    "events": []
+   },
+   {
+    "course_code": "TEK2805",
+    "course_name": "Programmering med Python",
+    "events": []
+   },
+   {
+    "course_code": "TEK2950",
+    "course_name": "Webutvikling",
+    "events": []
+   },
+   {
+    "course_code": "TEK2105",
+    "course_name": "Datavisualisering",
+    "events": []
+   },
+   {
+    "course_code": "TEK2209",
+    "course_name": "Grunnleggende dataanalyse",
+    "events": [
+     {
+      "metric": "Studenter (mot året før)",
+      "onset_period": 6,
+      "onset_label": "Vår 2026",
+      "value_at_onset": -10.34,
+      "value_latest": -10.34,
+      "unit": "%"
+     }
+    ]
+   },
+   {
+    "course_code": "TEK2312",
+    "course_name": "Praktisk maskinlæring",
+    "events": []
+   },
+   {
+    "course_code": "TEK2507",
+    "course_name": "Databaser og SQL",
+    "events": [
+     {
+      "metric": "Bestått",
+      "onset_period": 3,
+      "onset_label": "Høst 2024",
+      "value_at_onset": -4.72,
+      "value_latest": -11.5,
+      "unit": "pp"
+     },
+     {
+      "metric": "Kostnad per student",
+      "onset_period": 4,
+      "onset_label": "Vår 2025",
+      "value_at_onset": 85.22,
+      "value_latest": 86.74,
+      "unit": "%"
+     }
+    ]
+   },
+   {
+    "course_code": "TEK2902",
+    "course_name": "KI i arbeidslivet",
+    "events": []
+   },
+   {
+    "course_code": "HEL2112",
+    "course_name": "Psykisk helse i arbeidslivet",
+    "events": []
+   },
+   {
+    "course_code": "HEL2203",
+    "course_name": "Folkehelse og livsmestring",
+    "events": [
+     {
+      "metric": "Bestått",
+      "onset_period": 6,
+      "onset_label": "Vår 2026",
+      "value_at_onset": -6.76,
+      "value_latest": -6.76,
+      "unit": "pp"
+     }
+    ]
+   },
+   {
+    "course_code": "HEL2309",
+    "course_name": "Helsekommunikasjon",
+    "events": []
+   },
+   {
+    "course_code": "HEL2417",
+    "course_name": "Aktiv aldring",
+    "events": [
+     {
+      "metric": "Studentundersøkelse",
+      "onset_period": 4,
+      "onset_label": "Vår 2025",
+      "value_at_onset": -0.53,
+      "value_latest": -0.71,
+      "unit": "poeng"
+     },
+     {
+      "metric": "Bestått",
+      "onset_period": 5,
+      "onset_label": "Høst 2025",
+      "value_at_onset": -7.97,
+      "value_latest": -4.11,
+      "unit": "pp"
+     },
+     {
+      "metric": "Studenter (mot året før)",
+      "onset_period": 5,
+      "onset_label": "Høst 2025",
+      "value_at_onset": -13.79,
+      "value_latest": -27.08,
+      "unit": "%"
+     },
+     {
+      "metric": "Frafall",
+      "onset_period": 6,
+      "onset_label": "Vår 2026",
+      "value_at_onset": 10.53,
+      "value_latest": 10.53,
+      "unit": "pp"
+     },
+     {
+      "metric": "Kostnad per student",
+      "onset_period": 6,
+      "onset_label": "Vår 2026",
+      "value_at_onset": 32.84,
+      "value_latest": 32.84,
+      "unit": "%"
+     }
+    ]
+   },
+   {
+    "course_code": "HEL2513",
+    "course_name": "Digital helseforståelse",
+    "events": [
+     {
+      "metric": "Revisjonsbølge",
+      "onset_period": 3,
+      "onset_label": "Høst 2024",
+      "value_at_onset": 26,
+      "value_latest": null,
+      "unit": "saker"
+     },
+     {
+      "metric": "Studentundersøkelse opp",
+      "onset_period": 4,
+      "onset_label": "Vår 2025",
+      "value_at_onset": 0.28,
+      "value_latest": 0.68,
+      "unit": "poeng"
+     },
+     {
+      "metric": "Studenter opp (mot året før)",
+      "onset_period": 5,
+      "onset_label": "Høst 2025",
+      "value_at_onset": 20.0,
+      "value_latest": 36.1,
+      "unit": "%"
+     }
+    ]
+   },
+   {
+    "course_code": "HEL2701",
+    "course_name": "Ernæring og helse",
+    "events": [
+     {
+      "metric": "Bestått",
+      "onset_period": 6,
+      "onset_label": "Vår 2026",
+      "value_at_onset": -6.84,
+      "value_latest": -6.84,
+      "unit": "pp"
+     },
+     {
+      "metric": "Frafall",
+      "onset_period": 6,
+      "onset_label": "Vår 2026",
+      "value_at_onset": 6.17,
+      "value_latest": 6.17,
+      "unit": "pp"
+     }
+    ]
+   },
+   {
+    "course_code": "HEL2604",
+    "course_name": "Veiledning og relasjonsarbeid",
+    "events": [
+     {
+      "metric": "Bestått",
+      "onset_period": 6,
+      "onset_label": "Vår 2026",
+      "value_at_onset": -4.36,
+      "value_latest": -4.36,
+      "unit": "pp"
+     }
+    ]
+   },
+   {
+    "course_code": "HEL2805",
+    "course_name": "Voksenpedagogikk",
+    "events": []
+   },
+   {
+    "course_code": "HEL2902",
+    "course_name": "Coaching og motiverende samtale",
+    "events": []
+   },
+   {
+    "course_code": "DES2107",
+    "course_name": "Tjenestedesign",
+    "events": [
+     {
+      "metric": "Frafall",
+      "onset_period": 6,
+      "onset_label": "Vår 2026",
+      "value_at_onset": 6.42,
+      "value_latest": 6.42,
+      "unit": "pp"
+     }
+    ]
+   },
+   {
+    "course_code": "DES2318",
+    "course_name": "Universell utforming",
+    "events": []
+   },
+   {
+    "course_code": "DES2519",
+    "course_name": "Digital prototyping",
+    "events": []
+   },
+   {
+    "course_code": "DES2615",
+    "course_name": "Designledelse",
+    "events": [
+     {
+      "metric": "Kostnad per student",
+      "onset_period": 3,
+      "onset_label": "Høst 2024",
+      "value_at_onset": 19.0,
+      "value_latest": 23.87,
+      "unit": "%"
+     },
+     {
+      "metric": "Revisjonsbølge",
+      "onset_period": 3,
+      "onset_label": "Høst 2024",
+      "value_at_onset": 16,
+      "value_latest": null,
+      "unit": "saker"
+     }
+    ]
+   },
+   {
+    "course_code": "DES2701",
+    "course_name": "UX-design grunnkurs",
+    "events": []
+   },
+   {
+    "course_code": "DES2216",
+    "course_name": "Visuell historiefortelling",
+    "events": [
+     {
+      "metric": "Redaksjon",
+      "onset_period": 6,
+      "onset_label": "Vår 2026",
+      "value_at_onset": -0.3,
+      "value_latest": -0.3,
+      "unit": "poeng"
+     }
+    ]
+   },
+   {
+    "course_code": "DES2406",
+    "course_name": "Kreative metoder",
+    "events": [
+     {
+      "metric": "Studentundersøkelse",
+      "onset_period": 3,
+      "onset_label": "Høst 2024",
+      "value_at_onset": -0.36,
+      "value_latest": -0.66,
+      "unit": "poeng"
+     },
+     {
+      "metric": "Studenter (mot året før)",
+      "onset_period": 5,
+      "onset_label": "Høst 2025",
+      "value_at_onset": -25.33,
+      "value_latest": -32.2,
+      "unit": "%"
+     },
+     {
+      "metric": "Kostnad per student",
+      "onset_period": 6,
+      "onset_label": "Vår 2026",
+      "value_at_onset": 38.23,
+      "value_latest": 38.23,
+      "unit": "%"
+     }
+    ]
+   }
+  ],
+  "early_warning": {
+   "courses_with_survey_drop": 4,
+   "share_followed_by_enrolment_drop": 75.0,
+   "courses_without_survey_drop": 32,
+   "share_with_enrolment_drop_anyway": 12.5
+  },
+  "declines": [
+   {
+    "course_code": "LED2210",
+    "decline_type": "Markedsdrevet – taper andel",
+    "survey_onset": NaN,
+    "enrolment_onset": "Vår 2025",
+    "lead_semesters": NaN
+   },
+   {
+    "course_code": "LED2608",
+    "decline_type": "Kvalitetsdrevet",
+    "survey_onset": "Vår 2026",
+    "enrolment_onset": NaN,
+    "lead_semesters": NaN
+   },
+   {
+    "course_code": "LED2701",
+    "decline_type": "Markedsdrevet – taper andel",
+    "survey_onset": NaN,
+    "enrolment_onset": "Høst 2025",
+    "lead_semesters": NaN
+   },
+   {
+    "course_code": "LED2705",
+    "decline_type": "Markedsdrevet – taper andel",
+    "survey_onset": NaN,
+    "enrolment_onset": "Vår 2026",
+    "lead_semesters": NaN
+   },
+   {
+    "course_code": "TEK2414",
+    "decline_type": "Markedsdrevet – taper andel",
+    "survey_onset": NaN,
+    "enrolment_onset": NaN,
+    "lead_semesters": NaN
+   },
+   {
+    "course_code": "TEK2611",
+    "decline_type": "Kvalitetsdrevet",
+    "survey_onset": "Høst 2024",
+    "enrolment_onset": "Vår 2025",
+    "lead_semesters": 1.0
+   },
+   {
+    "course_code": "HEL2203",
+    "decline_type": "Markedsdrevet – taper andel",
+    "survey_onset": NaN,
+    "enrolment_onset": NaN,
+    "lead_semesters": NaN
+   },
+   {
+    "course_code": "HEL2417",
+    "decline_type": "Kvalitetsdrevet",
+    "survey_onset": "Vår 2025",
+    "enrolment_onset": "Høst 2025",
+    "lead_semesters": 1.0
+   },
+   {
+    "course_code": "DES2615",
+    "decline_type": "Markedsdrevet – taper andel",
+    "survey_onset": NaN,
+    "enrolment_onset": NaN,
+    "lead_semesters": NaN
+   },
+   {
+    "course_code": "DES2406",
+    "decline_type": "Kvalitetsdrevet",
+    "survey_onset": "Høst 2024",
+    "enrolment_onset": "Høst 2025",
+    "lead_semesters": 2.0
+   }
+  ]
+ },
+ "q6_matrix": {
+  "points": [
+   {
+    "course_code": "LED2101",
+    "course_name": "Endringsledelse i praksis",
+    "portefolje": "Ledelse",
+    "x_net_score": 3,
+    "y_students_latest": 494,
+    "students_baseline": 373,
+    "signals_good": 3,
+    "signals_bad": 0,
+    "class": "Skalér",
+    "verdict": "Bedre på 3 av 9 signaler (studenter, frafall, vekst mot marked).",
+    "revenue_latest_nok": 5688000
+   },
+   {
+    "course_code": "LED2210",
+    "course_name": "Prosjektledelse",
+    "portefolje": "Ledelse",
+    "x_net_score": -2,
+    "y_students_latest": 507,
+    "students_baseline": 699,
+    "signals_good": 0,
+    "signals_bad": 2,
+    "class": "Handle nå",
+    "verdict": "Studenttallet faller (-28 %) mens markedet for faget vokser (+10 %). Studenttilfredsheten holder seg – emnet taper andel, ikke kvalitet.",
+    "revenue_latest_nok": 5856000
+   },
+   {
+    "course_code": "LED2315",
+    "course_name": "Strategisk HR",
+    "portefolje": "Ledelse",
+    "x_net_score": -1,
+    "y_students_latest": 158,
+    "students_baseline": 164,
+    "signals_good": 0,
+    "signals_bad": 1,
+    "class": "Stabil",
+    "verdict": "Ingen tydelige endringer siden grunnlinjen.",
+    "revenue_latest_nok": 1377500
+   },
+   {
+    "course_code": "LED2402",
+    "course_name": "Bærekraftig virksomhetsstyring",
+    "portefolje": "Ledelse",
+    "x_net_score": 5,
+    "y_students_latest": 184,
+    "students_baseline": 136,
+    "signals_good": 5,
+    "signals_bad": 0,
+    "class": "Skalér",
+    "verdict": "Bedre studenttilfredshet uten høyere kostnad per student.",
+    "revenue_latest_nok": 1729000
+   },
+   {
+    "course_code": "LED2510",
+    "course_name": "Forhandling og påvirkning",
+    "portefolje": "Ledelse",
+    "x_net_score": 3,
+    "y_students_latest": 284,
+    "students_baseline": 233,
+    "signals_good": 3,
+    "signals_bad": 0,
+    "class": "Skalér",
+    "verdict": "Bedre på 3 av 9 signaler (studenter, frafall, vekst mot marked).",
+    "revenue_latest_nok": 2603000
+   },
+   {
+    "course_code": "LED2608",
+    "course_name": "Operativ økonomistyring",
+    "portefolje": "Økonomi og styring",
+    "x_net_score": -6,
+    "y_students_latest": 101,
+    "students_baseline": 112,
+    "signals_good": 1,
+    "signals_bad": 7,
+    "class": "Handle nå",
+    "verdict": "Studenttilfredsheten falt fra Vår 2026. Studenttallet har ikke falt tydelig ennå (-10 %) – et tidlig varsel. Lavere kostnad per student, men tilfredsheten faller samtidig.",
+    "revenue_latest_nok": 893000
+   },
+   {
+    "course_code": "LED2701",
+    "course_name": "Bedriftsøkonomi grunnkurs",
+    "portefolje": "Økonomi og styring",
+    "x_net_score": -3,
+    "y_students_latest": 584,
+    "students_baseline": 747,
+    "signals_good": 0,
+    "signals_bad": 3,
+    "class": "Handle nå",
+    "verdict": "Studenttallet faller (-22 %) mens markedet for faget vokser (+10 %). Studenttilfredsheten holder seg – emnet taper andel, ikke kvalitet.",
+    "revenue_latest_nok": 6720000
+   },
+   {
+    "course_code": "LED2705",
+    "course_name": "Regnskap og årsoppgjør",
+    "portefolje": "Økonomi og styring",
+    "x_net_score": -2,
+    "y_students_latest": 502,
+    "students_baseline": 642,
+    "signals_good": 0,
+    "signals_bad": 2,
+    "class": "Handle nå",
+    "verdict": "Studenttallet faller (-22 %) mens markedet for faget vokser (+10 %). Studenttilfredsheten holder seg – emnet taper andel, ikke kvalitet.",
+    "revenue_latest_nok": 5796000
+   },
+   {
+    "course_code": "LED2710",
+    "course_name": "Finansregnskap med analyse",
+    "portefolje": "Økonomi og styring",
+    "x_net_score": -2,
+    "y_students_latest": 208,
+    "students_baseline": 205,
+    "signals_good": 0,
+    "signals_bad": 2,
+    "class": "Følg med",
+    "verdict": "Svakere på 2 av 9 signaler (redaksjon, vekst mot marked).",
+    "revenue_latest_nok": 1881000
+   },
+   {
+    "course_code": "LED2720",
+    "course_name": "Digital markedsføring",
+    "portefolje": "Økonomi og styring",
+    "x_net_score": 5,
+    "y_students_latest": 349,
+    "students_baseline": 278,
+    "signals_good": 5,
+    "signals_bad": 0,
+    "class": "Skalér",
+    "verdict": "Bedre på 5 av 9 signaler (studenter, bestått, frafall, revisjonskostnad, vekst mot marked).",
+    "revenue_latest_nok": 3182500
+   },
+   {
+    "course_code": "TEK2414",
+    "course_name": "Informasjonssikkerhet",
+    "portefolje": "Teknologi",
+    "x_net_score": -3,
+    "y_students_latest": 250,
+    "students_baseline": 280,
+    "signals_good": 1,
+    "signals_bad": 4,
+    "class": "Handle nå",
+    "verdict": "Studenttallet faller (-11 %) mens markedet for faget vokser (+3 %). Studenttilfredsheten holder seg – emnet taper andel, ikke kvalitet. Mange revisjonssaker (3.0× porteføljenivå) uten at studenttilfredsheten bedres.",
+    "revenue_latest_nok": 2232500
+   },
+   {
+    "course_code": "TEK2611",
+    "course_name": "Digital arbeidsflyt",
+    "portefolje": "Teknologi",
+    "x_net_score": -6,
+    "y_students_latest": 108,
+    "students_baseline": 147,
+    "signals_good": 1,
+    "signals_bad": 7,
+    "class": "Handle nå",
+    "verdict": "Studenttilfredsheten falt fra Høst 2024, og studenttallet fulgte etter fra Vår 2025. Lavere kostnad per student, men tilfredsheten faller samtidig.",
+    "revenue_latest_nok": 969000
+   },
+   {
+    "course_code": "TEK2701",
+    "course_name": "Skytjenester og infrastruktur",
+    "portefolje": "Teknologi",
+    "x_net_score": 2,
+    "y_students_latest": 219,
+    "students_baseline": 188,
+    "signals_good": 2,
+    "signals_bad": 0,
+    "class": "God utvikling",
+    "verdict": "Bedre på 2 av 9 signaler (studenter, vekst mot marked).",
+    "revenue_latest_nok": 2004500
+   },
+   {
+    "course_code": "TEK2805",
+    "course_name": "Programmering med Python",
+    "portefolje": "Teknologi",
+    "x_net_score": 2,
+    "y_students_latest": 624,
+    "students_baseline": 554,
+    "signals_good": 2,
+    "signals_bad": 0,
+    "class": "God utvikling",
+    "verdict": "Bedre på 2 av 9 signaler (studenter, vekst mot marked).",
+    "revenue_latest_nok": 7080000
+   },
+   {
+    "course_code": "TEK2950",
+    "course_name": "Webutvikling",
+    "portefolje": "Teknologi",
+    "x_net_score": 0,
+    "y_students_latest": 237,
+    "students_baseline": 239,
+    "signals_good": 2,
+    "signals_bad": 2,
+    "class": "Stabil",
+    "verdict": "Høyere kostnad per student uten bedre studenttilfredshet.",
+    "revenue_latest_nok": 2137500
+   },
+   {
+    "course_code": "TEK2105",
+    "course_name": "Datavisualisering",
+    "portefolje": "Data og IT",
+    "x_net_score": 3,
+    "y_students_latest": 446,
+    "students_baseline": 327,
+    "signals_good": 3,
+    "signals_bad": 0,
+    "class": "Skalér",
+    "verdict": "Bedre på 3 av 9 signaler (studenter, frafall, vekst mot marked).",
+    "revenue_latest_nok": 4161000
+   },
+   {
+    "course_code": "TEK2209",
+    "course_name": "Grunnleggende dataanalyse",
+    "portefolje": "Data og IT",
+    "x_net_score": 3,
+    "y_students_latest": 599,
+    "students_baseline": 523,
+    "signals_good": 3,
+    "signals_bad": 0,
+    "class": "Skalér",
+    "verdict": "Lavere kostnad per student uten at kvaliteten faller.",
+    "revenue_latest_nok": 6948000
+   },
+   {
+    "course_code": "TEK2312",
+    "course_name": "Praktisk maskinlæring",
+    "portefolje": "Data og IT",
+    "x_net_score": 2,
+    "y_students_latest": 326,
+    "students_baseline": 221,
+    "signals_good": 2,
+    "signals_bad": 0,
+    "class": "God utvikling",
+    "verdict": "Bedre på 2 av 9 signaler (studenter, vekst mot marked).",
+    "revenue_latest_nok": 2964000
+   },
+   {
+    "course_code": "TEK2507",
+    "course_name": "Databaser og SQL",
+    "portefolje": "Data og IT",
+    "x_net_score": 0,
+    "y_students_latest": 312,
+    "students_baseline": 284,
+    "signals_good": 2,
+    "signals_bad": 2,
+    "class": "Stabil",
+    "verdict": "Eksamensform endret (Hjemmeeksamen → Skoleeksamen): kostnad per student +99 %, bestått -11.2 pp.",
+    "revenue_latest_nok": 2802500
+   },
+   {
+    "course_code": "TEK2902",
+    "course_name": "KI i arbeidslivet",
+    "portefolje": "Data og IT",
+    "x_net_score": 2,
+    "y_students_latest": 548,
+    "students_baseline": 396,
+    "signals_good": 3,
+    "signals_bad": 1,
+    "class": "God utvikling",
+    "verdict": "Bedre på 3 av 9 signaler (studenter, frafall, vekst mot marked).",
+    "revenue_latest_nok": 5044500
+   },
+   {
+    "course_code": "HEL2112",
+    "course_name": "Psykisk helse i arbeidslivet",
+    "portefolje": "Helse og livsmestring",
+    "x_net_score": 2,
+    "y_students_latest": 485,
+    "students_baseline": 352,
+    "signals_good": 2,
+    "signals_bad": 0,
+    "class": "God utvikling",
+    "verdict": "Bedre på 2 av 9 signaler (studenter, vekst mot marked).",
+    "revenue_latest_nok": 4436500
+   },
+   {
+    "course_code": "HEL2203",
+    "course_name": "Folkehelse og livsmestring",
+    "portefolje": "Helse og livsmestring",
+    "x_net_score": -2,
+    "y_students_latest": 176,
+    "students_baseline": 193,
+    "signals_good": 0,
+    "signals_bad": 2,
+    "class": "Følg med",
+    "verdict": "Studenttallet faller (-9 %) mens markedet for faget vokser (+8 %). Studenttilfredsheten holder seg – emnet taper andel, ikke kvalitet.",
+    "revenue_latest_nok": 1567500
+   },
+   {
+    "course_code": "HEL2309",
+    "course_name": "Helsekommunikasjon",
+    "portefolje": "Helse og livsmestring",
+    "x_net_score": 2,
+    "y_students_latest": 160,
+    "students_baseline": 137,
+    "signals_good": 3,
+    "signals_bad": 1,
+    "class": "God utvikling",
+    "verdict": "Lavere kostnad per student uten at kvaliteten faller.",
+    "revenue_latest_nok": 1463000
+   },
+   {
+    "course_code": "HEL2417",
+    "course_name": "Aktiv aldring",
+    "portefolje": "Helse og livsmestring",
+    "x_net_score": -8,
+    "y_students_latest": 85,
+    "students_baseline": 108,
+    "signals_good": 0,
+    "signals_bad": 8,
+    "class": "Handle nå",
+    "verdict": "Studenttilfredsheten falt fra Vår 2025, og studenttallet fulgte etter fra Høst 2025. Høyere kostnad per student uten bedre studenttilfredshet.",
+    "revenue_latest_nok": 779000
+   },
+   {
+    "course_code": "HEL2513",
+    "course_name": "Digital helseforståelse",
+    "portefolje": "Helse og livsmestring",
+    "x_net_score": 6,
+    "y_students_latest": 173,
+    "students_baseline": 135,
+    "signals_good": 6,
+    "signals_bad": 0,
+    "class": "Skalér",
+    "verdict": "Revisjonsbølgen i Høst 2024 ble fulgt av høyere studenttilfredshet (+0.43 poeng).",
+    "revenue_latest_nok": 1624500
+   },
+   {
+    "course_code": "HEL2701",
+    "course_name": "Ernæring og helse",
+    "portefolje": "Helse og livsmestring",
+    "x_net_score": 1,
+    "y_students_latest": 360,
+    "students_baseline": 300,
+    "signals_good": 2,
+    "signals_bad": 1,
+    "class": "Stabil",
+    "verdict": "Ingen tydelige endringer siden grunnlinjen.",
+    "revenue_latest_nok": 4116000
+   },
+   {
+    "course_code": "HEL2604",
+    "course_name": "Veiledning og relasjonsarbeid",
+    "portefolje": "Pedagogikk og veiledning",
+    "x_net_score": -1,
+    "y_students_latest": 217,
+    "students_baseline": 224,
+    "signals_good": 1,
+    "signals_bad": 2,
+    "class": "Stabil",
+    "verdict": "Ingen tydelige endringer siden grunnlinjen.",
+    "revenue_latest_nok": 2042500
+   },
+   {
+    "course_code": "HEL2805",
+    "course_name": "Voksenpedagogikk",
+    "portefolje": "Pedagogikk og veiledning",
+    "x_net_score": 2,
+    "y_students_latest": 179,
+    "students_baseline": 162,
+    "signals_good": 2,
+    "signals_bad": 0,
+    "class": "God utvikling",
+    "verdict": "Bedre på 2 av 9 signaler (studenter, vekst mot marked).",
+    "revenue_latest_nok": 1624500
+   },
+   {
+    "course_code": "HEL2810",
+    "course_name": "Spesialpedagogikk i praksis",
+    "portefolje": "Pedagogikk og veiledning",
+    "x_net_score": null,
+    "y_students_latest": 33,
+    "students_baseline": 30,
+    "signals_good": 0,
+    "signals_bad": 0,
+    "class": "For lite datagrunnlag",
+    "verdict": "For få studenter til å vurdere. Vises, men vurderes ikke.",
+    "revenue_latest_nok": 313500
+   },
+   {
+    "course_code": "HEL2902",
+    "course_name": "Coaching og motiverende samtale",
+    "portefolje": "Pedagogikk og veiledning",
+    "x_net_score": 4,
+    "y_students_latest": 232,
+    "students_baseline": 185,
+    "signals_good": 4,
+    "signals_bad": 0,
+    "class": "Skalér",
+    "verdict": "Bedre på 4 av 9 signaler (studenter, bestått, frafall, vekst mot marked).",
+    "revenue_latest_nok": 2099500
+   },
+   {
+    "course_code": "DES2107",
+    "course_name": "Tjenestedesign",
+    "portefolje": "Design",
+    "x_net_score": 1,
+    "y_students_latest": 326,
+    "students_baseline": 263,
+    "signals_good": 2,
+    "signals_bad": 1,
+    "class": "Stabil",
+    "verdict": "Ingen tydelige endringer siden grunnlinjen.",
+    "revenue_latest_nok": 2945000
+   },
+   {
+    "course_code": "DES2318",
+    "course_name": "Universell utforming",
+    "portefolje": "Design",
+    "x_net_score": 2,
+    "y_students_latest": 154,
+    "students_baseline": 132,
+    "signals_good": 2,
+    "signals_bad": 0,
+    "class": "God utvikling",
+    "verdict": "Lavere kostnad per student uten at kvaliteten faller.",
+    "revenue_latest_nok": 1387000
+   },
+   {
+    "course_code": "DES2519",
+    "course_name": "Digital prototyping",
+    "portefolje": "Design",
+    "x_net_score": 1,
+    "y_students_latest": 214,
+    "students_baseline": 196,
+    "signals_good": 2,
+    "signals_bad": 1,
+    "class": "Stabil",
+    "verdict": "Lavere kostnad per student uten at kvaliteten faller.",
+    "revenue_latest_nok": 1900000
+   },
+   {
+    "course_code": "DES2615",
+    "course_name": "Designledelse",
+    "portefolje": "Design",
+    "x_net_score": -4,
+    "y_students_latest": 68,
+    "students_baseline": 80,
+    "signals_good": 1,
+    "signals_bad": 5,
+    "class": "Handle nå",
+    "verdict": "Studenttallet faller (-15 %) mens markedet for faget vokser (+15 %). Studenttilfredsheten holder seg – emnet taper andel, ikke kvalitet. Mange revisjonssaker (2.8× porteføljenivå) uten at studenttilfredsheten bedres.",
+    "revenue_latest_nok": 598500
+   },
+   {
+    "course_code": "DES2701",
+    "course_name": "UX-design grunnkurs",
+    "portefolje": "Design",
+    "x_net_score": 1,
+    "y_students_latest": 310,
+    "students_baseline": 273,
+    "signals_good": 1,
+    "signals_bad": 0,
+    "class": "Stabil",
+    "verdict": "Ingen tydelige endringer siden grunnlinjen.",
+    "revenue_latest_nok": 3552000
+   },
+   {
+    "course_code": "DES2216",
+    "course_name": "Visuell historiefortelling",
+    "portefolje": "Kreative fag",
+    "x_net_score": 0,
+    "y_students_latest": 188,
+    "students_baseline": 183,
+    "signals_good": 2,
+    "signals_bad": 2,
+    "class": "Stabil",
+    "verdict": "Ingen tydelige endringer siden grunnlinjen.",
+    "revenue_latest_nok": 1710000
+   },
+   {
+    "course_code": "DES2406",
+    "course_name": "Kreative metoder",
+    "portefolje": "Kreative fag",
+    "x_net_score": -4,
+    "y_students_latest": 96,
+    "students_baseline": 125,
+    "signals_good": 1,
+    "signals_bad": 5,
+    "class": "Handle nå",
+    "verdict": "Studenttilfredsheten falt fra Høst 2024, og studenttallet fulgte etter fra Høst 2025. Høyere kostnad per student uten bedre studenttilfredshet.",
+    "revenue_latest_nok": 902500
+   },
+   {
+    "course_code": "DES2810",
+    "course_name": "Innholdsproduksjon for sosiale medier",
+    "portefolje": "Kreative fag",
+    "x_net_score": null,
+    "y_students_latest": 294,
+    "students_baseline": 0,
+    "signals_good": 0,
+    "signals_bad": 0,
+    "class": "For lite datagrunnlag",
+    "verdict": "For kort historikk. Vises, men vurderes ikke.",
+    "revenue_latest_nok": 2584000
+   },
+   {
+    "course_code": "DES2905",
+    "course_name": "Fotografi og bildeformidling",
+    "portefolje": "Kreative fag",
+    "x_net_score": null,
+    "y_students_latest": 27,
+    "students_baseline": 31,
+    "signals_good": 0,
+    "signals_bad": 0,
+    "class": "For lite datagrunnlag",
+    "verdict": "For få studenter til å vurdere. Vises, men vurderes ikke.",
+    "revenue_latest_nok": 247000
+   },
+   {
+    "course_code": "DES2950",
+    "course_name": "Film og videoproduksjon",
+    "portefolje": "Kreative fag",
+    "x_net_score": null,
+    "y_students_latest": 0,
+    "students_baseline": 65,
+    "signals_good": 0,
+    "signals_bad": 0,
+    "class": "Inaktiv",
+    "verdict": "Inaktivt emne uten studenter, men emneansvarlig koster fortsatt 55 000 kr per semester.",
+    "revenue_latest_nok": 0
+   }
+  ],
+  "headlines": {
+   "act_now": [
+    {
+     "course_code": "LED2701",
+     "course_name": "Bedriftsøkonomi grunnkurs",
+     "students_latest": 584,
+     "reason": "Studenttallet faller (-22 %) mens markedet for faget vokser (+10 %). Studenttilfredsheten holder seg – emnet taper andel, ikke kvalitet."
+    },
+    {
+     "course_code": "LED2210",
+     "course_name": "Prosjektledelse",
+     "students_latest": 507,
+     "reason": "Studenttallet faller (-28 %) mens markedet for faget vokser (+10 %). Studenttilfredsheten holder seg – emnet taper andel, ikke kvalitet."
+    },
+    {
+     "course_code": "LED2705",
+     "course_name": "Regnskap og årsoppgjør",
+     "students_latest": 502,
+     "reason": "Studenttallet faller (-22 %) mens markedet for faget vokser (+10 %). Studenttilfredsheten holder seg – emnet taper andel, ikke kvalitet."
+    },
+    {
+     "course_code": "TEK2414",
+     "course_name": "Informasjonssikkerhet",
+     "students_latest": 250,
+     "reason": "Studenttallet faller (-11 %) mens markedet for faget vokser (+3 %). Studenttilfredsheten holder seg – emnet taper andel, ikke kvalitet. Mange revisjonssaker (3.0× porteføljenivå) uten at studenttilfredsheten bedres."
+    },
+    {
+     "course_code": "TEK2611",
+     "course_name": "Digital arbeidsflyt",
+     "students_latest": 108,
+     "reason": "Studenttilfredsheten falt fra Høst 2024, og studenttallet fulgte etter fra Vår 2025. Lavere kostnad per student, men tilfredsheten faller samtidig."
+    },
+    {
+     "course_code": "LED2608",
+     "course_name": "Operativ økonomistyring",
+     "students_latest": 101,
+     "reason": "Studenttilfredsheten falt fra Vår 2026. Studenttallet har ikke falt tydelig ennå (-10 %) – et tidlig varsel. Lavere kostnad per student, men tilfredsheten faller samtidig."
+    },
+    {
+     "course_code": "DES2406",
+     "course_name": "Kreative metoder",
+     "students_latest": 96,
+     "reason": "Studenttilfredsheten falt fra Høst 2024, og studenttallet fulgte etter fra Høst 2025. Høyere kostnad per student uten bedre studenttilfredshet."
+    },
+    {
+     "course_code": "HEL2417",
+     "course_name": "Aktiv aldring",
+     "students_latest": 85,
+     "reason": "Studenttilfredsheten falt fra Vår 2025, og studenttallet fulgte etter fra Høst 2025. Høyere kostnad per student uten bedre studenttilfredshet."
+    },
+    {
+     "course_code": "DES2615",
+     "course_name": "Designledelse",
+     "students_latest": 68,
+     "reason": "Studenttallet faller (-15 %) mens markedet for faget vokser (+15 %). Studenttilfredsheten holder seg – emnet taper andel, ikke kvalitet. Mange revisjonssaker (2.8× porteføljenivå) uten at studenttilfredsheten bedres."
+    }
+   ],
+   "scale": [
+    {
+     "course_code": "TEK2209",
+     "course_name": "Grunnleggende dataanalyse",
+     "students_latest": 599,
+     "reason": "Lavere kostnad per student uten at kvaliteten faller."
+    },
+    {
+     "course_code": "LED2101",
+     "course_name": "Endringsledelse i praksis",
+     "students_latest": 494,
+     "reason": "Bedre på 3 av 9 signaler (studenter, frafall, vekst mot marked)."
+    },
+    {
+     "course_code": "TEK2105",
+     "course_name": "Datavisualisering",
+     "students_latest": 446,
+     "reason": "Bedre på 3 av 9 signaler (studenter, frafall, vekst mot marked)."
+    },
+    {
+     "course_code": "LED2720",
+     "course_name": "Digital markedsføring",
+     "students_latest": 349,
+     "reason": "Bedre på 5 av 9 signaler (studenter, bestått, frafall, revisjonskostnad, vekst mot marked)."
+    },
+    {
+     "course_code": "LED2510",
+     "course_name": "Forhandling og påvirkning",
+     "students_latest": 284,
+     "reason": "Bedre på 3 av 9 signaler (studenter, frafall, vekst mot marked)."
+    },
+    {
+     "course_code": "HEL2902",
+     "course_name": "Coaching og motiverende samtale",
+     "students_latest": 232,
+     "reason": "Bedre på 4 av 9 signaler (studenter, bestått, frafall, vekst mot marked)."
+    },
+    {
+     "course_code": "LED2402",
+     "course_name": "Bærekraftig virksomhetsstyring",
+     "students_latest": 184,
+     "reason": "Bedre studenttilfredshet uten høyere kostnad per student."
+    },
+    {
+     "course_code": "HEL2513",
+     "course_name": "Digital helseforståelse",
+     "students_latest": 173,
+     "reason": "Revisjonsbølgen i Høst 2024 ble fulgt av høyere studenttilfredshet (+0.43 poeng)."
+    }
+   ],
+   "market_driven_students_lost": 554,
+   "class_counts": {
+    "Handle nå": 9,
+    "Stabil": 9,
+    "Skalér": 8,
+    "God utvikling": 8,
+    "Følg med": 2
+   }
+  }
+ },
+ "heatmap": [
+  {
+   "course_code": "LED2101",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 32.4,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2101",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 1.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2101",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -3.5,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "LED2101",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -0.9,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2101",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2101",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2101",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": 2.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2101",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 11.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2101",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 22.4,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2210",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": -27.5,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2210",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -2.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2210",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": 1.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2210",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -0.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2210",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -1.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2210",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -2.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2210",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": 1.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2210",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": -39.1,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2210",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -37.5,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2315",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": -3.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2315",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 1.6,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2315",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -0.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2315",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -2.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2315",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2315",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -2.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2315",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": 4.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2315",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": -8.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2315",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -13.7,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2402",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 35.3,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2402",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -2.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2402",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -5.4,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "LED2402",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": 5.1,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "LED2402",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2402",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2402",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -8.6,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "LED2402",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": -28.6,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2402",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 25.2,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2510",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 21.9,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2510",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -0.4,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2510",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -3.2,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "LED2510",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": 1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2510",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2510",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2510",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": 3.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2510",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": -19.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2510",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 11.8,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2608",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": -9.8,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "LED2608",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -10.5,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2608",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": 8.9,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2608",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -7.1,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "LED2608",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -6.8,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "LED2608",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 3.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2608",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -9.4,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "LED2608",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 500.0,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2608",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -19.9,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2701",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": -21.8,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2701",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -4.0,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "LED2701",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": 2.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2701",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -0.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2701",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 2.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2701",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2701",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -0.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2701",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 150.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2701",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -31.9,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2705",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": -21.8,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2705",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 1.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2705",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -1.6,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2705",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -1.6,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2705",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2705",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2705",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": 2.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2705",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": -100.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2705",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -31.9,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2710",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 1.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2710",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -0.6,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2710",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -1.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2710",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -2.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2710",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -2.6,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2710",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -6.1,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "LED2710",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -1.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2710",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2710",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -8.6,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "LED2720",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 25.5,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2720",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 4.2,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "LED2720",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -3.9,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "LED2720",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": 3.1,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2720",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2720",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 2.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2720",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": 1.6,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "LED2720",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": -57.1,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "LED2720",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 30.5,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2414",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": -10.7,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2414",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 3.2,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "TEK2414",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -0.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2414",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": 0.1,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2414",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 4.1,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2414",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -7.2,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "TEK2414",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -0.6,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2414",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 209.5,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2414",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -13.9,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2611",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": -26.5,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2611",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -9.2,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2611",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": 12.3,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2611",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -15.2,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2611",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -11.3,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2611",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -13.1,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2611",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -7.4,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "TEK2611",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 27.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2611",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -29.7,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2701",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 16.5,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2701",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -1.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2701",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -2.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2701",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -2.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2701",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -1.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2701",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -1.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2701",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -3.4,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2701",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 50.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2701",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 13.3,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2805",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 12.6,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2805",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 1.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2805",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": 1.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2805",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -1.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2805",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 1.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2805",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2805",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2805",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 50.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2805",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 9.4,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "TEK2950",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": -0.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2950",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 0.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2950",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -5.3,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "TEK2950",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -0.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2950",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 8.3,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "TEK2950",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -6.0,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "TEK2950",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": 5.3,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "TEK2950",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 23.1,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2950",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -4.1,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2105",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 36.4,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2105",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 1.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2105",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -4.8,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "TEK2105",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": 2.4,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2105",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2105",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2105",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -0.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2105",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 11.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2105",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 33.2,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2209",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 14.5,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2209",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -1.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2209",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -0.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2209",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": 1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2209",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 3.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2209",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2209",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -10.6,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2209",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": -16.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2209",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 11.3,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2312",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 47.5,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2312",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2312",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -0.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2312",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": 1.4,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2312",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -2.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2312",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -1.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2312",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -2.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2312",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": -45.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2312",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 48.6,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2507",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 9.9,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "TEK2507",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -11.2,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2507",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": 1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2507",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -3.1,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2507",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -2.6,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2507",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -2.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2507",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": 99.1,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2507",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": -25.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2507",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 6.6,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "TEK2902",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 38.4,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "TEK2902",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -3.5,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "TEK2902",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -3.4,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "TEK2902",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -0.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2902",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 2.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2902",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 2.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2902",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -1.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2902",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 100.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "TEK2902",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 34.6,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2112",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 37.8,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2112",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 2.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2112",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": 0.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2112",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": 1.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2112",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 2.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2112",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2112",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -2.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2112",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": -16.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2112",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 25.9,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2203",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": -8.8,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "HEL2203",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 0.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2203",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": 1.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2203",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -2.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2203",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2203",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2203",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": 2.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2203",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2203",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -16.5,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2309",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 16.8,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2309",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -3.4,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "HEL2309",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -1.1,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2309",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -1.6,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2309",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 1.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2309",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2309",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -8.7,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "HEL2309",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": -35.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2309",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 9.1,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "HEL2417",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": -21.3,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2417",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -6.6,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2417",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": 6.8,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2417",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -16.4,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2417",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -11.4,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2417",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -6.9,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "HEL2417",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": 12.2,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2417",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 30.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2417",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -29.0,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2513",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 28.1,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2513",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 2.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2513",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -2.9,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2513",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": 13.7,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2513",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 8.3,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "HEL2513",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 14.8,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2513",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -10.4,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2513",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 33.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2513",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 20.5,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2701",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 20.0,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2701",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -1.4,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2701",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": 3.5,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "HEL2701",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -1.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2701",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -2.4,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2701",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2701",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -4.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2701",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 5.9,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2701",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 12.3,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2604",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": -3.1,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2604",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -3.4,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "HEL2604",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -3.4,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "HEL2604",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -5.1,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "HEL2604",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 2.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2604",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2604",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -0.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2604",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2604",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -1.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2805",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 10.5,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2805",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 1.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2805",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": 0.4,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2805",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": 1.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2805",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2805",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2805",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2805",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2805",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 11.9,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2810",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 10.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2810",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 4.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2810",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -7.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2810",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2810",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -4.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2810",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2810",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -3.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2810",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 50.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2810",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 6.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2902",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 25.4,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "HEL2902",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 4.3,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "HEL2902",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -4.5,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "HEL2902",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -0.4,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2902",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2902",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2902",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -0.6,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2902",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "HEL2902",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 26.8,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "DES2107",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 24.0,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "DES2107",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 2.6,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2107",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": 3.4,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "DES2107",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": 0.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2107",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 2.4,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2107",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 3.9,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2107",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -2.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2107",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": -50.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2107",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 9.4,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "DES2318",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 16.7,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "DES2318",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 1.4,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2318",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -1.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2318",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -2.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2318",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -1.3,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2318",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 1.4,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2318",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -8.4,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "DES2318",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 16.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2318",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": 2.1,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2519",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 9.2,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "DES2519",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 2.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2519",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": 1.1,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2519",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": 0.1,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2519",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -2.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2519",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2519",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -6.2,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "DES2519",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": -57.1,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2519",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -5.4,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "DES2615",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": -15.0,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "DES2615",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -1.9,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2615",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -5.1,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "DES2615",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -3.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2615",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -7.6,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "DES2615",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2615",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": 17.0,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "DES2615",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 141.7,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "DES2615",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -29.6,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "DES2701",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 13.6,
+   "goodness": 1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "DES2701",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -0.1,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2701",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -2.4,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2701",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -0.9,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2701",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": 3.9,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2701",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2701",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -2.4,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2701",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 0.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2701",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -1.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2216",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": 2.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2216",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": 3.1,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "DES2216",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -4.6,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "DES2216",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": 1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2216",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -2.4,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2216",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -5.1,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "DES2216",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": -1.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2216",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": -18.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2216",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -11.2,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "DES2406",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": -23.2,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "DES2406",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -1.4,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2406",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -4.3,
+   "goodness": 1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "DES2406",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": -15.0,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "DES2406",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -9.8,
+   "goodness": -1,
+   "magnitude": "small"
+  },
+  {
+   "course_code": "DES2406",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -3.9,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2406",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": 10.0,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "DES2406",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 22.2,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2406",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -37.1,
+   "goodness": -1,
+   "magnitude": "large"
+  },
+  {
+   "course_code": "DES2810",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2810",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2810",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2810",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2810",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2810",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2810",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2810",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2810",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2905",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": -12.9,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2905",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": -9.7,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2905",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": -1.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2905",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2905",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": -3.4,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2905",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": -2.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2905",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": 13.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2905",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": 12.5,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2905",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -26.8,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2950",
+   "metric": "students",
+   "metric_label": "Studenter",
+   "unit": "%",
+   "change": -100.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2950",
+   "metric": "pass_rate",
+   "metric_label": "Bestått",
+   "unit": "pp",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2950",
+   "metric": "dropout_rate",
+   "metric_label": "Frafall",
+   "unit": "pp",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2950",
+   "metric": "student_survey",
+   "metric_label": "Studentundersøkelse",
+   "unit": "%",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2950",
+   "metric": "course_leader",
+   "metric_label": "Emneansvarlig",
+   "unit": "%",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2950",
+   "metric": "editorial",
+   "metric_label": "Redaksjon",
+   "unit": "%",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2950",
+   "metric": "cost_per_student",
+   "metric_label": "Kostnad per student",
+   "unit": "%",
+   "change": null,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2950",
+   "metric": "revision_cost",
+   "metric_label": "Revisjonskostnad",
+   "unit": "%",
+   "change": -100.0,
+   "goodness": 0,
+   "magnitude": ""
+  },
+  {
+   "course_code": "DES2950",
+   "metric": "market_relative",
+   "metric_label": "Vekst mot marked",
+   "unit": "pp",
+   "change": -93.6,
+   "goodness": 0,
+   "magnitude": ""
+  }
+ ],
+ "market": [
+  {
+   "nus_lvl4_code": "6152",
+   "nus_lvl4_name": "Teater- og filmutdanninger",
+   "courses": [
+    "DES2950"
+   ],
+   "series": [
+    {
+     "period_index": -4,
+     "semester_label": "Vår 2021",
+     "national_online": 41,
+     "national_all": 752,
+     "oslomet_online": 0,
+     "oslomet_all": 110,
+     "pelican_students": null
+    },
+    {
+     "period_index": -3,
+     "semester_label": "Høst 2021",
+     "national_online": 13,
+     "national_all": 789,
+     "oslomet_online": 0,
+     "oslomet_all": 118,
+     "pelican_students": null
+    },
+    {
+     "period_index": -2,
+     "semester_label": "Vår 2022",
+     "national_online": 3,
+     "national_all": 723,
+     "oslomet_online": 0,
+     "oslomet_all": 103,
+     "pelican_students": null
+    },
+    {
+     "period_index": -1,
+     "semester_label": "Høst 2022",
+     "national_online": 6,
+     "national_all": 715,
+     "oslomet_online": 0,
+     "oslomet_all": 102,
+     "pelican_students": null
+    },
+    {
+     "period_index": 0,
+     "semester_label": "Vår 2023",
+     "national_online": 4,
+     "national_all": 700,
+     "oslomet_online": 0,
+     "oslomet_all": 91,
+     "pelican_students": null
+    },
+    {
+     "period_index": 1,
+     "semester_label": "Høst 2023",
+     "national_online": 0,
+     "national_all": 751,
+     "oslomet_online": 0,
+     "oslomet_all": 90,
+     "pelican_students": 37
+    },
+    {
+     "period_index": 2,
+     "semester_label": "Vår 2024",
+     "national_online": 0,
+     "national_all": 773,
+     "oslomet_online": 0,
+     "oslomet_all": 79,
+     "pelican_students": 28
+    },
+    {
+     "period_index": 3,
+     "semester_label": "Høst 2024",
+     "national_online": 8,
+     "national_all": 755,
+     "oslomet_online": 0,
+     "oslomet_all": 84,
+     "pelican_students": 26
+    },
+    {
+     "period_index": 4,
+     "semester_label": "Vår 2025",
+     "national_online": 8,
+     "national_all": 699,
+     "oslomet_online": 0,
+     "oslomet_all": 72,
+     "pelican_students": 0
+    },
+    {
+     "period_index": 5,
+     "semester_label": "Høst 2025",
+     "national_online": 0,
+     "national_all": 732,
+     "oslomet_online": 0,
+     "oslomet_all": 89,
+     "pelican_students": 0
+    },
+    {
+     "period_index": 6,
+     "semester_label": "Vår 2026",
+     "national_online": 0,
+     "national_all": 694,
+     "oslomet_online": 0,
+     "oslomet_all": 73,
+     "pelican_students": 0
+    }
+   ]
+  },
+  {
+   "nus_lvl4_code": "6161",
+   "nus_lvl4_name": "Husflid, brukskunst og industridesign",
+   "courses": [
+    "DES2107",
+    "DES2318",
+    "DES2519",
+    "DES2615",
+    "DES2701"
+   ],
+   "series": [
+    {
+     "period_index": -4,
+     "semester_label": "Vår 2021",
+     "national_online": 0,
+     "national_all": 125,
+     "oslomet_online": 0,
+     "oslomet_all": 122,
+     "pelican_students": null
+    },
+    {
+     "period_index": -3,
+     "semester_label": "Høst 2021",
+     "national_online": 0,
+     "national_all": 146,
+     "oslomet_online": 0,
+     "oslomet_all": 125,
+     "pelican_students": null
+    },
+    {
+     "period_index": -2,
+     "semester_label": "Vår 2022",
+     "national_online": 0,
+     "national_all": 129,
+     "oslomet_online": 0,
+     "oslomet_all": 123,
+     "pelican_students": null
+    },
+    {
+     "period_index": -1,
+     "semester_label": "Høst 2022",
+     "national_online": 0,
+     "national_all": 117,
+     "oslomet_online": 0,
+     "oslomet_all": 109,
+     "pelican_students": null
+    },
+    {
+     "period_index": 0,
+     "semester_label": "Vår 2023",
+     "national_online": 0,
+     "national_all": 108,
+     "oslomet_online": 0,
+     "oslomet_all": 108,
+     "pelican_students": null
+    },
+    {
+     "period_index": 1,
+     "semester_label": "Høst 2023",
+     "national_online": 0,
+     "national_all": 123,
+     "oslomet_online": 0,
+     "oslomet_all": 113,
+     "pelican_students": 491
+    },
+    {
+     "period_index": 2,
+     "semester_label": "Vår 2024",
+     "national_online": 10,
+     "national_all": 124,
+     "oslomet_online": 0,
+     "oslomet_all": 114,
+     "pelican_students": 453
+    },
+    {
+     "period_index": 3,
+     "semester_label": "Høst 2024",
+     "national_online": 14,
+     "national_all": 134,
+     "oslomet_online": 0,
+     "oslomet_all": 120,
+     "pelican_students": 542
+    },
+    {
+     "period_index": 4,
+     "semester_label": "Vår 2025",
+     "national_online": 10,
+     "national_all": 128,
+     "oslomet_online": 0,
+     "oslomet_all": 118,
+     "pelican_students": 465
+    },
+    {
+     "period_index": 5,
+     "semester_label": "Høst 2025",
+     "national_online": 17,
+     "national_all": 140,
+     "oslomet_online": 0,
+     "oslomet_all": 123,
+     "pelican_students": 572
+    },
+    {
+     "period_index": 6,
+     "semester_label": "Vår 2026",
+     "national_online": 16,
+     "national_all": 143,
+     "oslomet_online": 0,
+     "oslomet_all": 123,
+     "pelican_students": 500
+    }
+   ]
+  },
+  {
+   "nus_lvl4_code": "6241",
+   "nus_lvl4_name": "Pedagogikk",
+   "courses": [
+    "HEL2604",
+    "HEL2805",
+    "HEL2902"
+   ],
+   "series": [
+    {
+     "period_index": -4,
+     "semester_label": "Vår 2021",
+     "national_online": 627,
+     "national_all": 3067,
+     "oslomet_online": 11,
+     "oslomet_all": 21,
+     "pelican_students": null
+    },
+    {
+     "period_index": -3,
+     "semester_label": "Høst 2021",
+     "national_online": 806,
+     "national_all": 3223,
+     "oslomet_online": 6,
+     "oslomet_all": 22,
+     "pelican_students": null
+    },
+    {
+     "period_index": -2,
+     "semester_label": "Vår 2022",
+     "national_online": 697,
+     "national_all": 2950,
+     "oslomet_online": 0,
+     "oslomet_all": 12,
+     "pelican_students": null
+    },
+    {
+     "period_index": -1,
+     "semester_label": "Høst 2022",
+     "national_online": 544,
+     "national_all": 2917,
+     "oslomet_online": 0,
+     "oslomet_all": 27,
+     "pelican_students": null
+    },
+    {
+     "period_index": 0,
+     "semester_label": "Vår 2023",
+     "national_online": 484,
+     "national_all": 2678,
+     "oslomet_online": 0,
+     "oslomet_all": 28,
+     "pelican_students": null
+    },
+    {
+     "period_index": 1,
+     "semester_label": "Høst 2023",
+     "national_online": 460,
+     "national_all": 2898,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 312
+    },
+    {
+     "period_index": 2,
+     "semester_label": "Vår 2024",
+     "national_online": 363,
+     "national_all": 2595,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 259
+    },
+    {
+     "period_index": 3,
+     "semester_label": "Høst 2024",
+     "national_online": 427,
+     "national_all": 2760,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 322
+    },
+    {
+     "period_index": 4,
+     "semester_label": "Vår 2025",
+     "national_online": 607,
+     "national_all": 2735,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 275
+    },
+    {
+     "period_index": 5,
+     "semester_label": "Høst 2025",
+     "national_online": 583,
+     "national_all": 2805,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 338
+    },
+    {
+     "period_index": 6,
+     "semester_label": "Vår 2026",
+     "national_online": 618,
+     "national_all": 2611,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 290
+    }
+   ]
+  },
+  {
+   "nus_lvl4_code": "6242",
+   "nus_lvl4_name": "Spesialpedagogikk",
+   "courses": [
+    "HEL2810"
+   ],
+   "series": [
+    {
+     "period_index": -4,
+     "semester_label": "Vår 2021",
+     "national_online": 0,
+     "national_all": 1278,
+     "oslomet_online": 0,
+     "oslomet_all": 166,
+     "pelican_students": null
+    },
+    {
+     "period_index": -3,
+     "semester_label": "Høst 2021",
+     "national_online": 13,
+     "national_all": 1340,
+     "oslomet_online": 0,
+     "oslomet_all": 139,
+     "pelican_students": null
+    },
+    {
+     "period_index": -2,
+     "semester_label": "Vår 2022",
+     "national_online": 10,
+     "national_all": 1269,
+     "oslomet_online": 0,
+     "oslomet_all": 157,
+     "pelican_students": null
+    },
+    {
+     "period_index": -1,
+     "semester_label": "Høst 2022",
+     "national_online": 81,
+     "national_all": 1527,
+     "oslomet_online": 0,
+     "oslomet_all": 174,
+     "pelican_students": null
+    },
+    {
+     "period_index": 0,
+     "semester_label": "Vår 2023",
+     "national_online": 93,
+     "national_all": 1421,
+     "oslomet_online": 0,
+     "oslomet_all": 182,
+     "pelican_students": null
+    },
+    {
+     "period_index": 1,
+     "semester_label": "Høst 2023",
+     "national_online": 376,
+     "national_all": 1704,
+     "oslomet_online": 0,
+     "oslomet_all": 215,
+     "pelican_students": 13
+    },
+    {
+     "period_index": 2,
+     "semester_label": "Vår 2024",
+     "national_online": 393,
+     "national_all": 1679,
+     "oslomet_online": 0,
+     "oslomet_all": 222,
+     "pelican_students": 17
+    },
+    {
+     "period_index": 3,
+     "semester_label": "Høst 2024",
+     "national_online": 580,
+     "national_all": 1858,
+     "oslomet_online": 52,
+     "oslomet_all": 223,
+     "pelican_students": 12
+    },
+    {
+     "period_index": 4,
+     "semester_label": "Vår 2025",
+     "national_online": 532,
+     "national_all": 1733,
+     "oslomet_online": 51,
+     "oslomet_all": 208,
+     "pelican_students": 9
+    },
+    {
+     "period_index": 5,
+     "semester_label": "Høst 2025",
+     "national_online": 556,
+     "national_all": 1805,
+     "oslomet_online": 46,
+     "oslomet_all": 226,
+     "pelican_students": 16
+    },
+    {
+     "period_index": 6,
+     "semester_label": "Vår 2026",
+     "national_online": 494,
+     "national_all": 1688,
+     "oslomet_online": 44,
+     "oslomet_all": 210,
+     "pelican_students": 17
+    }
+   ]
+  },
+  {
+   "nus_lvl4_code": "6351",
+   "nus_lvl4_name": "Media og kommunikasjon",
+   "courses": [
+    "DES2810"
+   ],
+   "series": [
+    {
+     "period_index": -4,
+     "semester_label": "Vår 2021",
+     "national_online": 30,
+     "national_all": 1981,
+     "oslomet_online": 0,
+     "oslomet_all": 204,
+     "pelican_students": null
+    },
+    {
+     "period_index": -3,
+     "semester_label": "Høst 2021",
+     "national_online": 34,
+     "national_all": 2093,
+     "oslomet_online": 0,
+     "oslomet_all": 222,
+     "pelican_students": null
+    },
+    {
+     "period_index": -2,
+     "semester_label": "Vår 2022",
+     "national_online": 32,
+     "national_all": 1939,
+     "oslomet_online": 0,
+     "oslomet_all": 196,
+     "pelican_students": null
+    },
+    {
+     "period_index": -1,
+     "semester_label": "Høst 2022",
+     "national_online": 16,
+     "national_all": 2066,
+     "oslomet_online": 0,
+     "oslomet_all": 237,
+     "pelican_students": null
+    },
+    {
+     "period_index": 0,
+     "semester_label": "Vår 2023",
+     "national_online": 12,
+     "national_all": 1897,
+     "oslomet_online": 0,
+     "oslomet_all": 208,
+     "pelican_students": null
+    },
+    {
+     "period_index": 1,
+     "semester_label": "Høst 2023",
+     "national_online": 20,
+     "national_all": 2097,
+     "oslomet_online": 0,
+     "oslomet_all": 245,
+     "pelican_students": 0
+    },
+    {
+     "period_index": 2,
+     "semester_label": "Vår 2024",
+     "national_online": 19,
+     "national_all": 1966,
+     "oslomet_online": 0,
+     "oslomet_all": 220,
+     "pelican_students": 0
+    },
+    {
+     "period_index": 3,
+     "semester_label": "Høst 2024",
+     "national_online": 34,
+     "national_all": 2189,
+     "oslomet_online": 0,
+     "oslomet_all": 237,
+     "pelican_students": 0
+    },
+    {
+     "period_index": 4,
+     "semester_label": "Vår 2025",
+     "national_online": 28,
+     "national_all": 2021,
+     "oslomet_online": 0,
+     "oslomet_all": 218,
+     "pelican_students": 139
+    },
+    {
+     "period_index": 5,
+     "semester_label": "Høst 2025",
+     "national_online": 63,
+     "national_all": 2349,
+     "oslomet_online": 0,
+     "oslomet_all": 259,
+     "pelican_students": 148
+    },
+    {
+     "period_index": 6,
+     "semester_label": "Vår 2026",
+     "national_online": 36,
+     "national_all": 2137,
+     "oslomet_online": 0,
+     "oslomet_all": 230,
+     "pelican_students": 146
+    }
+   ]
+  },
+  {
+   "nus_lvl4_code": "6359",
+   "nus_lvl4_name": "Medie- og informasjonsfag, andre",
+   "courses": [
+    "DES2216",
+    "DES2406",
+    "DES2905"
+   ],
+   "series": [
+    {
+     "period_index": -4,
+     "semester_label": "Vår 2021",
+     "national_online": 0,
+     "national_all": 803,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": null
+    },
+    {
+     "period_index": -3,
+     "semester_label": "Høst 2021",
+     "national_online": 21,
+     "national_all": 943,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": null
+    },
+    {
+     "period_index": -2,
+     "semester_label": "Vår 2022",
+     "national_online": 0,
+     "national_all": 896,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": null
+    },
+    {
+     "period_index": -1,
+     "semester_label": "Høst 2022",
+     "national_online": 0,
+     "national_all": 886,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": null
+    },
+    {
+     "period_index": 0,
+     "semester_label": "Vår 2023",
+     "national_online": 0,
+     "national_all": 855,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": null
+    },
+    {
+     "period_index": 1,
+     "semester_label": "Høst 2023",
+     "national_online": 0,
+     "national_all": 831,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 177
+    },
+    {
+     "period_index": 2,
+     "semester_label": "Vår 2024",
+     "national_online": 0,
+     "national_all": 800,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 162
+    },
+    {
+     "period_index": 3,
+     "semester_label": "Høst 2024",
+     "national_online": 373,
+     "national_all": 1191,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 191
+    },
+    {
+     "period_index": 4,
+     "semester_label": "Vår 2025",
+     "national_online": 0,
+     "national_all": 802,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 146
+    },
+    {
+     "period_index": 5,
+     "semester_label": "Høst 2025",
+     "national_online": 366,
+     "national_all": 1120,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 174
+    },
+    {
+     "period_index": 6,
+     "semester_label": "Vår 2026",
+     "national_online": 0,
+     "national_all": 738,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 137
+    }
+   ]
+  },
+  {
+   "nus_lvl4_code": "6361",
+   "nus_lvl4_name": "Psykologi",
+   "courses": [
+    "HEL2112"
+   ],
+   "series": [
+    {
+     "period_index": -4,
+     "semester_label": "Vår 2021",
+     "national_online": 172,
+     "national_all": 2836,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": null
+    },
+    {
+     "period_index": -3,
+     "semester_label": "Høst 2021",
+     "national_online": 1507,
+     "national_all": 4946,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": null
+    },
+    {
+     "period_index": -2,
+     "semester_label": "Vår 2022",
+     "national_online": 1516,
+     "national_all": 4731,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": null
+    },
+    {
+     "period_index": -1,
+     "semester_label": "Høst 2022",
+     "national_online": 1528,
+     "national_all": 5111,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": null
+    },
+    {
+     "period_index": 0,
+     "semester_label": "Vår 2023",
+     "national_online": 1503,
+     "national_all": 4845,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": null
+    },
+    {
+     "period_index": 1,
+     "semester_label": "Høst 2023",
+     "national_online": 1732,
+     "national_all": 5187,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 180
+    },
+    {
+     "period_index": 2,
+     "semester_label": "Vår 2024",
+     "national_online": 1810,
+     "national_all": 5007,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 172
+    },
+    {
+     "period_index": 3,
+     "semester_label": "Høst 2024",
+     "national_online": 2020,
+     "national_all": 5508,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 219
+    },
+    {
+     "period_index": 4,
+     "semester_label": "Vår 2025",
+     "national_online": 2047,
+     "national_all": 5315,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 197
+    },
+    {
+     "period_index": 5,
+     "semester_label": "Høst 2025",
+     "national_online": 2172,
+     "national_all": 5895,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 255
+    },
+    {
+     "period_index": 6,
+     "semester_label": "Vår 2026",
+     "national_online": 2070,
+     "national_all": 5515,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 230
+    }
+   ]
+  },
+  {
+   "nus_lvl4_code": "6411",
+   "nus_lvl4_name": "Økonomisk-administrative fag",
+   "courses": [
+    "LED2101",
+    "LED2210",
+    "LED2315",
+    "LED2402",
+    "LED2510",
+    "LED2608",
+    "LED2701",
+    "LED2705",
+    "LED2710"
+   ],
+   "series": [
+    {
+     "period_index": -4,
+     "semester_label": "Vår 2021",
+     "national_online": 4632,
+     "national_all": 27327,
+     "oslomet_online": 0,
+     "oslomet_all": 1043,
+     "pelican_students": null
+    },
+    {
+     "period_index": -3,
+     "semester_label": "Høst 2021",
+     "national_online": 5983,
+     "national_all": 31629,
+     "oslomet_online": 11,
+     "oslomet_all": 1183,
+     "pelican_students": null
+    },
+    {
+     "period_index": -2,
+     "semester_label": "Vår 2022",
+     "national_online": 5156,
+     "national_all": 28379,
+     "oslomet_online": 0,
+     "oslomet_all": 1038,
+     "pelican_students": null
+    },
+    {
+     "period_index": -1,
+     "semester_label": "Høst 2022",
+     "national_online": 6575,
+     "national_all": 31297,
+     "oslomet_online": 0,
+     "oslomet_all": 1221,
+     "pelican_students": null
+    },
+    {
+     "period_index": 0,
+     "semester_label": "Vår 2023",
+     "national_online": 5649,
+     "national_all": 28190,
+     "oslomet_online": 7,
+     "oslomet_all": 1089,
+     "pelican_students": null
+    },
+    {
+     "period_index": 1,
+     "semester_label": "Høst 2023",
+     "national_online": 7991,
+     "national_all": 32273,
+     "oslomet_online": 0,
+     "oslomet_all": 1342,
+     "pelican_students": 1779
+    },
+    {
+     "period_index": 2,
+     "semester_label": "Vår 2024",
+     "national_online": 6994,
+     "national_all": 29401,
+     "oslomet_online": 0,
+     "oslomet_all": 1227,
+     "pelican_students": 1532
+    },
+    {
+     "period_index": 3,
+     "semester_label": "Høst 2024",
+     "national_online": 8755,
+     "national_all": 33818,
+     "oslomet_online": 16,
+     "oslomet_all": 1427,
+     "pelican_students": 1781
+    },
+    {
+     "period_index": 4,
+     "semester_label": "Vår 2025",
+     "national_online": 7908,
+     "national_all": 31223,
+     "oslomet_online": 0,
+     "oslomet_all": 1296,
+     "pelican_students": 1439
+    },
+    {
+     "period_index": 5,
+     "semester_label": "Høst 2025",
+     "national_online": 9775,
+     "national_all": 35626,
+     "oslomet_online": 23,
+     "oslomet_all": 1484,
+     "pelican_students": 1700
+    },
+    {
+     "period_index": 6,
+     "semester_label": "Vår 2026",
+     "national_online": 8234,
+     "national_all": 32257,
+     "oslomet_online": 0,
+     "oslomet_all": 1343,
+     "pelican_students": 1322
+    }
+   ]
+  },
+  {
+   "nus_lvl4_code": "6422",
+   "nus_lvl4_name": "Markedsføring",
+   "courses": [
+    "LED2720"
+   ],
+   "series": [
+    {
+     "period_index": -4,
+     "semester_label": "Vår 2021",
+     "national_online": 332,
+     "national_all": 3882,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": null
+    },
+    {
+     "period_index": -3,
+     "semester_label": "Høst 2021",
+     "national_online": 451,
+     "national_all": 4123,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": null
+    },
+    {
+     "period_index": -2,
+     "semester_label": "Vår 2022",
+     "national_online": 443,
+     "national_all": 3893,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": null
+    },
+    {
+     "period_index": -1,
+     "semester_label": "Høst 2022",
+     "national_online": 489,
+     "national_all": 3778,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": null
+    },
+    {
+     "period_index": 0,
+     "semester_label": "Vår 2023",
+     "national_online": 469,
+     "national_all": 3571,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": null
+    },
+    {
+     "period_index": 1,
+     "semester_label": "Høst 2023",
+     "national_online": 557,
+     "national_all": 3907,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 147
+    },
+    {
+     "period_index": 2,
+     "semester_label": "Vår 2024",
+     "national_online": 547,
+     "national_all": 3771,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 131
+    },
+    {
+     "period_index": 3,
+     "semester_label": "Høst 2024",
+     "national_online": 642,
+     "national_all": 3922,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 163
+    },
+    {
+     "period_index": 4,
+     "semester_label": "Vår 2025",
+     "national_online": 644,
+     "national_all": 3668,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 140
+    },
+    {
+     "period_index": 5,
+     "semester_label": "Høst 2025",
+     "national_online": 719,
+     "national_all": 3752,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 190
+    },
+    {
+     "period_index": 6,
+     "semester_label": "Vår 2026",
+     "national_online": 703,
+     "national_all": 3544,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 159
+    }
+   ]
+  },
+  {
+   "nus_lvl4_code": "6541",
+   "nus_lvl4_name": "Informasjons- og datateknologi",
+   "courses": [
+    "TEK2414",
+    "TEK2611",
+    "TEK2701",
+    "TEK2805",
+    "TEK2950",
+    "TEK2105",
+    "TEK2209",
+    "TEK2507"
+   ],
+   "series": [
+    {
+     "period_index": -4,
+     "semester_label": "Vår 2021",
+     "national_online": 639,
+     "national_all": 9853,
+     "oslomet_online": 0,
+     "oslomet_all": 837,
+     "pelican_students": null
+    },
+    {
+     "period_index": -3,
+     "semester_label": "Høst 2021",
+     "national_online": 847,
+     "national_all": 11538,
+     "oslomet_online": 0,
+     "oslomet_all": 975,
+     "pelican_students": null
+    },
+    {
+     "period_index": -2,
+     "semester_label": "Vår 2022",
+     "national_online": 489,
+     "national_all": 10240,
+     "oslomet_online": 0,
+     "oslomet_all": 898,
+     "pelican_students": null
+    },
+    {
+     "period_index": -1,
+     "semester_label": "Høst 2022",
+     "national_online": 753,
+     "national_all": 12067,
+     "oslomet_online": 0,
+     "oslomet_all": 1025,
+     "pelican_students": null
+    },
+    {
+     "period_index": 0,
+     "semester_label": "Vår 2023",
+     "national_online": 628,
+     "national_all": 10957,
+     "oslomet_online": 0,
+     "oslomet_all": 969,
+     "pelican_students": null
+    },
+    {
+     "period_index": 1,
+     "semester_label": "Høst 2023",
+     "national_online": 880,
+     "national_all": 13008,
+     "oslomet_online": 0,
+     "oslomet_all": 1086,
+     "pelican_students": 1370
+    },
+    {
+     "period_index": 2,
+     "semester_label": "Vår 2024",
+     "national_online": 680,
+     "national_all": 11768,
+     "oslomet_online": 0,
+     "oslomet_all": 1034,
+     "pelican_students": 1172
+    },
+    {
+     "period_index": 3,
+     "semester_label": "Høst 2024",
+     "national_online": 910,
+     "national_all": 13289,
+     "oslomet_online": 0,
+     "oslomet_all": 1260,
+     "pelican_students": 1448
+    },
+    {
+     "period_index": 4,
+     "semester_label": "Vår 2025",
+     "national_online": 1225,
+     "national_all": 12655,
+     "oslomet_online": 0,
+     "oslomet_all": 1205,
+     "pelican_students": 1257
+    },
+    {
+     "period_index": 5,
+     "semester_label": "Høst 2025",
+     "national_online": 1400,
+     "national_all": 13502,
+     "oslomet_online": 0,
+     "oslomet_all": 1311,
+     "pelican_students": 1486
+    },
+    {
+     "period_index": 6,
+     "semester_label": "Vår 2026",
+     "national_online": 975,
+     "national_all": 12071,
+     "oslomet_online": 0,
+     "oslomet_all": 1198,
+     "pelican_students": 1309
+    }
+   ]
+  },
+  {
+   "nus_lvl4_code": "6549",
+   "nus_lvl4_name": "Informasjons- og datateknologi, andre",
+   "courses": [
+    "TEK2312",
+    "TEK2902"
+   ],
+   "series": [
+    {
+     "period_index": -4,
+     "semester_label": "Vår 2021",
+     "national_online": 90,
+     "national_all": 912,
+     "oslomet_online": 84,
+     "oslomet_all": 84,
+     "pelican_students": null
+    },
+    {
+     "period_index": -3,
+     "semester_label": "Høst 2021",
+     "national_online": 88,
+     "national_all": 1061,
+     "oslomet_online": 0,
+     "oslomet_all": 31,
+     "pelican_students": null
+    },
+    {
+     "period_index": -2,
+     "semester_label": "Vår 2022",
+     "national_online": 333,
+     "national_all": 1281,
+     "oslomet_online": 0,
+     "oslomet_all": 67,
+     "pelican_students": null
+    },
+    {
+     "period_index": -1,
+     "semester_label": "Høst 2022",
+     "national_online": 405,
+     "national_all": 1250,
+     "oslomet_online": 0,
+     "oslomet_all": 18,
+     "pelican_students": null
+    },
+    {
+     "period_index": 0,
+     "semester_label": "Vår 2023",
+     "national_online": 112,
+     "national_all": 768,
+     "oslomet_online": 0,
+     "oslomet_all": 54,
+     "pelican_students": null
+    },
+    {
+     "period_index": 1,
+     "semester_label": "Høst 2023",
+     "national_online": 95,
+     "national_all": 918,
+     "oslomet_online": 0,
+     "oslomet_all": 7,
+     "pelican_students": 112
+    },
+    {
+     "period_index": 2,
+     "semester_label": "Vår 2024",
+     "national_online": 90,
+     "national_all": 675,
+     "oslomet_online": 0,
+     "oslomet_all": 24,
+     "pelican_students": 109
+    },
+    {
+     "period_index": 3,
+     "semester_label": "Høst 2024",
+     "national_online": 109,
+     "national_all": 853,
+     "oslomet_online": 0,
+     "oslomet_all": 0,
+     "pelican_students": 350
+    },
+    {
+     "period_index": 4,
+     "semester_label": "Vår 2025",
+     "national_online": 94,
+     "national_all": 665,
+     "oslomet_online": 0,
+     "oslomet_all": 63,
+     "pelican_students": 307
+    },
+    {
+     "period_index": 5,
+     "semester_label": "Høst 2025",
+     "national_online": 9,
+     "national_all": 810,
+     "oslomet_online": 9,
+     "oslomet_all": 9,
+     "pelican_students": 430
+    },
+    {
+     "period_index": 6,
+     "semester_label": "Vår 2026",
+     "national_online": 0,
+     "national_all": 766,
+     "oslomet_online": 0,
+     "oslomet_all": 57,
+     "pelican_students": 444
+    }
+   ]
+  },
+  {
+   "nus_lvl4_code": "6699",
+   "nus_lvl4_name": "Helse-, sosial- og idrettsfag, andre",
+   "courses": [
+    "HEL2203",
+    "HEL2309",
+    "HEL2417",
+    "HEL2513",
+    "HEL2701"
+   ],
+   "series": [
+    {
+     "period_index": -4,
+     "semester_label": "Vår 2021",
+     "national_online": 404,
+     "national_all": 6329,
+     "oslomet_online": 25,
+     "oslomet_all": 784,
+     "pelican_students": null
+    },
+    {
+     "period_index": -3,
+     "semester_label": "Høst 2021",
+     "national_online": 724,
+     "national_all": 6774,
+     "oslomet_online": 23,
+     "oslomet_all": 748,
+     "pelican_students": null
+    },
+    {
+     "period_index": -2,
+     "semester_label": "Vår 2022",
+     "national_online": 711,
+     "national_all": 6395,
+     "oslomet_online": 52,
+     "oslomet_all": 750,
+     "pelican_students": null
+    },
+    {
+     "period_index": -1,
+     "semester_label": "Høst 2022",
+     "national_online": 840,
+     "national_all": 6847,
+     "oslomet_online": 107,
+     "oslomet_all": 880,
+     "pelican_students": null
+    },
+    {
+     "period_index": 0,
+     "semester_label": "Vår 2023",
+     "national_online": 831,
+     "national_all": 6474,
+     "oslomet_online": 65,
+     "oslomet_all": 762,
+     "pelican_students": null
+    },
+    {
+     "period_index": 1,
+     "semester_label": "Høst 2023",
+     "national_online": 763,
+     "national_all": 6815,
+     "oslomet_online": 68,
+     "oslomet_all": 841,
+     "pelican_students": 465
+    },
+    {
+     "period_index": 2,
+     "semester_label": "Vår 2024",
+     "national_online": 925,
+     "national_all": 7213,
+     "oslomet_online": 46,
+     "oslomet_all": 749,
+     "pelican_students": 408
+    },
+    {
+     "period_index": 3,
+     "semester_label": "Høst 2024",
+     "national_online": 1017,
+     "national_all": 7278,
+     "oslomet_online": 79,
+     "oslomet_all": 907,
+     "pelican_students": 488
+    },
+    {
+     "period_index": 4,
+     "semester_label": "Vår 2025",
+     "national_online": 1122,
+     "national_all": 7274,
+     "oslomet_online": 53,
+     "oslomet_all": 831,
+     "pelican_students": 433
+    },
+    {
+     "period_index": 5,
+     "semester_label": "Høst 2025",
+     "national_online": 1312,
+     "national_all": 7615,
+     "oslomet_online": 53,
+     "oslomet_all": 910,
+     "pelican_students": 518
+    },
+    {
+     "period_index": 6,
+     "semester_label": "Vår 2026",
+     "national_online": 1312,
+     "national_all": 7492,
+     "oslomet_online": 132,
+     "oslomet_all": 934,
+     "pelican_students": 436
+    }
+   ]
+  }
+ ]
+}
